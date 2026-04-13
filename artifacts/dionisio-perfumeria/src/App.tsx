@@ -195,6 +195,15 @@ export default function App() {
           z-index: 2;
           padding: 2rem 1.5rem;
         }
+        .hero-welcome {
+          font-family: 'Raleway', sans-serif;
+          font-size: clamp(0.9rem, 2.8vw, 1.15rem);
+          font-weight: 300;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #e8e0d0;
+          margin-bottom: 0.4rem;
+        }
         .hero-badge {
           display: inline-block;
           font-size: 0.7rem;
@@ -478,6 +487,7 @@ export default function App() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-badge">Fragancias Exclusivas</div>
+          <p className="hero-welcome">Bienvenido a</p>
           <h1 className="hero-title">
             Dionisio<br /><span>Perfumería</span>
           </h1>
