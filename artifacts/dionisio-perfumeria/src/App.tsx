@@ -18,6 +18,18 @@ import img11 from "@assets/Captura_de_pantalla_2026-03-10_160601_1776041552667.j
 import img12 from "@assets/Captura_de_pantalla_2026-03-10_160615_1776041552667.jpg";
 import img13 from "@assets/Captura_de_pantalla_2026-03-10_160626_1776041552668.jpg";
 
+import aaa01 from "@assets/perfume9_1776041945777.jpg";
+import aaa02 from "@assets/perfume10_1776041945777.jpg";
+import aaa03 from "@assets/perfume11_1776041945778.jpg";
+import aaa04 from "@assets/perfume12_1776041945779.jpg";
+import aaa05 from "@assets/perfume13_1776041945779.jpg";
+
+import bs01 from "@assets/imgvs1_1776041960423.jpg";
+import bs02 from "@assets/imgvs2_1776041960424.jpg";
+import bs03 from "@assets/imgvs3_1776041960425.jpg";
+import bs04 from "@assets/imgvs4_1776041960425.jpg";
+import bs05 from "@assets/imgvs5_1776041960426.jpg";
+
 const WA_LINK = "https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20este%20perfume.";
 
 const arabes = [
@@ -36,9 +48,21 @@ const arabes = [
   { img: img13, name: "Odyssey Limoni", marca: "Armaf" },
 ];
 
-const aaa: typeof arabes = [];
+const aaa = [
+  { img: aaa01, name: "212 VIP Black", marca: "Carolina Herrera" },
+  { img: aaa02, name: "212 VIP Party Fever", marca: "Carolina Herrera" },
+  { img: aaa03, name: "212 VIP Rosé", marca: "Carolina Herrera" },
+  { img: aaa04, name: "212 VIP", marca: "Carolina Herrera" },
+  { img: aaa05, name: "212 VIP Rosé EDP", marca: "Carolina Herrera" },
+];
 
-const bodySplash: typeof arabes = [];
+const bodySplash = [
+  { img: bs01, name: "Midnight Fantasy", marca: "Victoria's Secret" },
+  { img: bs02, name: "Temptation", marca: "Victoria's Secret" },
+  { img: bs03, name: "Aqua Kiss", marca: "Victoria's Secret" },
+  { img: bs04, name: "Sugar High Shimmer", marca: "Victoria's Secret" },
+  { img: bs05, name: "Love Spell", marca: "Victoria's Secret" },
+];
 
 function PerfumeCard({ img, name, marca }: { img: string; name: string; marca: string }) {
   return (
