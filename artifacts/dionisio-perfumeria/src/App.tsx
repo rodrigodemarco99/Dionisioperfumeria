@@ -17,6 +17,17 @@ import img10 from "@assets/Captura_de_pantalla_2026-03-10_160345_1776041552661.j
 import img11 from "@assets/Captura_de_pantalla_2026-03-10_160601_1776041552667.jpg";
 import img12 from "@assets/Captura_de_pantalla_2026-03-10_160615_1776041552667.jpg";
 import img13 from "@assets/Captura_de_pantalla_2026-03-10_160626_1776041552668.jpg";
+import img14 from "@assets/Captura_de_pantalla_2026-04-07_102455_1776042829225.png";
+import img15 from "@assets/Captura_de_pantalla_2026-04-07_102541_1776042829224.png";
+import img16 from "@assets/Captura_de_pantalla_2026-04-07_102603_1776042829224.png";
+import img17 from "@assets/Captura_de_pantalla_2026-04-07_102626_1776042829223.png";
+import img18 from "@assets/Captura_de_pantalla_2026-04-07_102833_1776042829223.png";
+import img19 from "@assets/Captura_de_pantalla_2026-04-07_102845_1776042829222.png";
+import img20 from "@assets/Captura_de_pantalla_2026-04-07_102857_1776042829222.png";
+import img21 from "@assets/Captura_de_pantalla_2026-04-07_102943_1776042829221.png";
+import img22 from "@assets/Captura_de_pantalla_2026-04-07_103046_1776042829221.png";
+import img23 from "@assets/Captura_de_pantalla_2026-04-07_103135_1776042829220.png";
+import img24 from "@assets/Captura_de_pantalla_2026-04-07_103255_1776042829219.png";
 
 import aaa01 from "@assets/perfume9_1776041945777.jpg";
 import aaa02 from "@assets/perfume10_1776041945777.jpg";
@@ -46,6 +57,17 @@ const arabes = [
   { img: img11, name: "Odyssey Candee", marca: "Armaf" },
   { img: img12, name: "Odyssey Tyrant", marca: "Armaf" },
   { img: img13, name: "Odyssey Limoni", marca: "Armaf" },
+  { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa" },
+  { img: img15, name: "His Confession Black", marca: "Lattafa" },
+  { img: img16, name: "Her Confession", marca: "Lattafa" },
+  { img: img17, name: "Maahir Black Edition", marca: "Lattafa" },
+  { img: img18, name: "Asad Zanzibar", marca: "Lattafa" },
+  { img: img19, name: "Asad Elixir", marca: "Lattafa" },
+  { img: img20, name: "Yara", marca: "Lattafa" },
+  { img: img21, name: "Erba Pura", marca: "Xerjoff" },
+  { img: img22, name: "Viking Beirut", marca: "Bharara" },
+  { img: img23, name: "Al Noble Safeer", marca: "Lattafa" },
+  { img: img24, name: "Odyssey Mega", marca: "Armaf" },
 ];
 
 const aaa = [
