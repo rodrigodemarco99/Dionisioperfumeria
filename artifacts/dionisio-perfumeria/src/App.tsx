@@ -134,39 +134,39 @@ export default function App() {
 
         body {
           font-family: 'Raleway', sans-serif;
-          background-color: #0a0806;
-          color: #f0ebe3;
+          background-color: #ffffff;
+          color: #1a1a1a;
           padding-bottom: 70px;
         }
 
         /* NAVBAR */
         .dionisio-navbar {
-          background: rgba(10, 8, 6, 0.85);
+          background: rgba(255, 255, 255, 0.92);
           backdrop-filter: blur(12px);
           -webkit-backdrop-filter: blur(12px);
-          border-bottom: 1px solid rgba(201,168,76,0.15);
-          transition: background 0.3s;
+          border-bottom: 1px solid #e8e2d8;
+          transition: background 0.3s, box-shadow 0.3s;
           position: fixed;
           top: 0;
           width: 100%;
           z-index: 1000;
         }
         .dionisio-navbar.scrolled {
-          background: rgba(10, 8, 6, 0.97);
-          box-shadow: 0 2px 20px rgba(0,0,0,0.6);
+          background: rgba(255, 255, 255, 0.99);
+          box-shadow: 0 2px 16px rgba(0,0,0,0.08);
         }
         .navbar-brand-text {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.5rem;
           font-weight: 600;
-          color: #c9a84c !important;
+          color: #b8922a !important;
           letter-spacing: 0.05em;
         }
         .nav-link-custom {
           font-family: 'Raleway', sans-serif;
           font-size: 0.82rem;
           font-weight: 500;
-          color: #d4cfc8 !important;
+          color: #444 !important;
           letter-spacing: 0.12em;
           text-transform: uppercase;
           padding: 0.5rem 1rem !important;
@@ -174,13 +174,13 @@ export default function App() {
           text-decoration: none;
         }
         .nav-link-custom:hover {
-          color: #c9a84c !important;
+          color: #b8922a !important;
         }
         .navbar-toggler {
-          border: 1px solid rgba(201,168,76,0.4) !important;
+          border: 1px solid rgba(184,146,42,0.4) !important;
         }
         .navbar-toggler-icon {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28201,168,76,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28100,80,20,0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
         }
 
         /* HERO */
@@ -192,7 +192,7 @@ export default function App() {
           justify-content: center;
           text-align: center;
           overflow: hidden;
-          background-color: #0a0806;
+          background-color: #f5f0e8;
         }
         .hero-bg {
           position: absolute;
@@ -200,16 +200,16 @@ export default function App() {
           background-image: url('${heroImg}');
           background-size: cover;
           background-position: center top;
-          filter: brightness(0.45);
+          filter: brightness(0.55);
         }
         .hero-overlay {
           position: absolute;
           inset: 0;
           background: linear-gradient(to bottom,
-            rgba(10,8,6,0.3) 0%,
-            rgba(10,8,6,0.1) 40%,
-            rgba(10,8,6,0.7) 80%,
-            rgba(10,8,6,1) 100%
+            rgba(255,255,255,0.1) 0%,
+            rgba(255,255,255,0.05) 40%,
+            rgba(255,255,255,0.55) 80%,
+            rgba(255,255,255,1) 100%
           );
         }
         .hero-content {
@@ -223,8 +223,9 @@ export default function App() {
           font-weight: 300;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: #e8e0d0;
+          color: #fff;
           margin-bottom: 0.4rem;
+          text-shadow: 0 1px 8px rgba(0,0,0,0.4);
         }
         .hero-badge {
           display: inline-block;
@@ -232,8 +233,8 @@ export default function App() {
           font-weight: 500;
           letter-spacing: 0.25em;
           text-transform: uppercase;
-          color: #c9a84c;
-          border: 1px solid rgba(201,168,76,0.5);
+          color: #fff;
+          border: 1px solid rgba(255,255,255,0.7);
           padding: 0.35rem 1rem;
           margin-bottom: 1.5rem;
         }
@@ -242,12 +243,13 @@ export default function App() {
           font-size: clamp(3rem, 10vw, 6.5rem);
           font-weight: 300;
           line-height: 1.05;
-          color: #f5f0e8;
+          color: #fff;
           margin-bottom: 0.5rem;
           letter-spacing: -0.01em;
+          text-shadow: 0 2px 16px rgba(0,0,0,0.3);
         }
         .hero-title span {
-          color: #c9a84c;
+          color: #f0d080;
           font-style: italic;
         }
         .hero-subtitle {
@@ -256,15 +258,16 @@ export default function App() {
           font-weight: 300;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          color: #b0a89a;
+          color: rgba(255,255,255,0.85);
           margin-bottom: 2.5rem;
+          text-shadow: 0 1px 6px rgba(0,0,0,0.3);
         }
         .hero-cta {
           display: inline-flex;
           align-items: center;
           gap: 0.6rem;
-          background: #c9a84c;
-          color: #0a0806;
+          background: #25D366;
+          color: #fff;
           font-family: 'Raleway', sans-serif;
           font-size: 0.78rem;
           font-weight: 700;
@@ -274,10 +277,11 @@ export default function App() {
           text-decoration: none;
           transition: background 0.25s, transform 0.2s;
           border: none;
+          border-radius: 2px;
         }
         .hero-cta:hover {
-          background: #e0bb60;
-          color: #0a0806;
+          background: #1ebe5a;
+          color: #fff;
           transform: translateY(-2px);
         }
         .hero-scroll-hint {
@@ -290,7 +294,7 @@ export default function App() {
           flex-direction: column;
           align-items: center;
           gap: 0.4rem;
-          color: rgba(201,168,76,0.6);
+          color: rgba(255,255,255,0.6);
           font-size: 0.68rem;
           letter-spacing: 0.15em;
           text-transform: uppercase;
@@ -304,38 +308,39 @@ export default function App() {
         /* SECTION HEADERS */
         .section-divider {
           width: 50px;
-          height: 1px;
-          background: #c9a84c;
+          height: 2px;
+          background: #b8922a;
           margin: 0 auto 1.2rem;
         }
         .section-tag {
           font-size: 0.68rem;
           letter-spacing: 0.25em;
           text-transform: uppercase;
-          color: #c9a84c;
+          color: #b8922a;
           margin-bottom: 0.6rem;
-          font-weight: 500;
+          font-weight: 600;
         }
         .section-title {
           font-family: 'Cormorant Garamond', serif;
           font-size: clamp(2rem, 6vw, 3.2rem);
           font-weight: 400;
-          color: #f5f0e8;
+          color: #1a1a1a;
           margin-bottom: 0.5rem;
           line-height: 1.1;
         }
         .section-desc {
           font-size: 0.88rem;
-          color: #8a8278;
+          color: #777;
           max-width: 480px;
           margin: 0 auto;
           line-height: 1.7;
         }
         .perfume-section {
           padding: 5rem 0 4rem;
+          background: #ffffff;
         }
         .perfume-section:nth-child(even) {
-          background: rgba(255,255,255,0.015);
+          background: #f8f6f2;
         }
 
         /* PERFUME CARDS */
@@ -344,20 +349,20 @@ export default function App() {
           display: block;
         }
         .perfume-card {
-          background: #12100d;
-          border: 1px solid rgba(201,168,76,0.1);
+          background: #ffffff;
+          border: 1px solid #e8e2d8;
           overflow: hidden;
           transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
           cursor: pointer;
         }
         .perfume-card:hover {
-          border-color: rgba(201,168,76,0.5);
+          border-color: #b8922a;
           transform: translateY(-6px);
-          box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,168,76,0.15);
+          box-shadow: 0 16px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(184,146,42,0.2);
         }
         .perfume-img-wrap {
           overflow: hidden;
-          background: #1a1714;
+          background: #f5f0e8;
           aspect-ratio: 1 / 1;
           display: flex;
           align-items: center;
@@ -375,19 +380,20 @@ export default function App() {
         .perfume-info {
           padding: 1rem;
           text-align: center;
+          background: #fff;
         }
         .perfume-marca {
           font-size: 0.65rem;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          color: #c9a84c;
+          color: #b8922a;
           margin-bottom: 0.2rem;
           font-weight: 600;
         }
         .perfume-name {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1rem;
-          color: #e8e2d8;
+          color: #1a1a1a;
           margin-bottom: 0.7rem;
           line-height: 1.3;
         }
@@ -399,25 +405,26 @@ export default function App() {
           letter-spacing: 0.1em;
           text-transform: uppercase;
           color: #25D366;
-          border: 1px solid rgba(37,211,102,0.35);
+          border: 1px solid rgba(37,211,102,0.5);
           padding: 0.3rem 0.8rem;
           transition: background 0.2s, color 0.2s;
+          border-radius: 2px;
         }
         .perfume-card:hover .consultar-btn {
           background: #25D366;
-          color: #0a0806;
+          color: #fff;
         }
 
         /* COMING SOON */
         .coming-soon {
           text-align: center;
           padding: 3rem 1rem;
-          color: #5a5450;
-          border: 1px dashed rgba(201,168,76,0.15);
+          color: #aaa;
+          border: 1px dashed #ddd;
         }
         .coming-soon i {
           font-size: 2rem;
-          color: rgba(201,168,76,0.3);
+          color: #ccc;
           display: block;
           margin-bottom: 0.8rem;
         }
@@ -448,7 +455,7 @@ export default function App() {
           align-items: center;
           justify-content: center;
           gap: 0.6rem;
-          box-shadow: 0 -3px 20px rgba(37,211,102,0.3);
+          box-shadow: 0 -3px 20px rgba(37,211,102,0.25);
           transition: background 0.2s;
         }
         .wa-bar:hover {
@@ -462,15 +469,15 @@ export default function App() {
 
         /* FOOTER */
         .dionisio-footer {
-          background: #07060400;
-          border-top: 1px solid rgba(201,168,76,0.1);
+          background: #f8f6f2;
+          border-top: 1px solid #e8e2d8;
           padding: 2.5rem 1rem;
           text-align: center;
         }
         .footer-brand {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.6rem;
-          color: #c9a84c;
+          color: #b8922a;
           font-weight: 600;
           margin-bottom: 0.5rem;
         }
@@ -478,7 +485,7 @@ export default function App() {
           font-size: 0.75rem;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: #5a5450;
+          color: #999;
         }
 
         @media (max-width: 575px) {
