@@ -27,20 +27,18 @@ const arabes = [
   { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa" },
   { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa" },
   { img: img06, name: "9pm Night Out", marca: "Afnan" },
-];
-
-const aaa = [
   { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf" },
   { img: img08, name: "Club de Nuit Woman", marca: "Armaf" },
   { img: img09, name: "Club de Nuit Untold", marca: "Armaf" },
-];
-
-const bodySplash = [
   { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf" },
   { img: img11, name: "Odyssey Candee", marca: "Armaf" },
   { img: img12, name: "Odyssey Tyrant", marca: "Armaf" },
   { img: img13, name: "Odyssey Limoni", marca: "Armaf" },
 ];
+
+const aaa: typeof arabes = [];
+
+const bodySplash: typeof arabes = [];
 
 function PerfumeCard({ img, name, marca }: { img: string; name: string; marca: string }) {
   return (
@@ -386,6 +384,26 @@ export default function App() {
           color: #0a0806;
         }
 
+        /* COMING SOON */
+        .coming-soon {
+          text-align: center;
+          padding: 3rem 1rem;
+          color: #5a5450;
+          border: 1px dashed rgba(201,168,76,0.15);
+        }
+        .coming-soon i {
+          font-size: 2rem;
+          color: rgba(201,168,76,0.3);
+          display: block;
+          margin-bottom: 0.8rem;
+        }
+        .coming-soon p {
+          font-size: 0.82rem;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          margin: 0;
+        }
+
         /* WHATSAPP FLOATING BAR */
         .wa-bar {
           position: fixed;
@@ -533,11 +551,18 @@ export default function App() {
               Perfumes de alta gama, inspirados en las mejores fragancias del mundo a precios accesibles.
             </p>
           </div>
-          <div className="row g-3 justify-content-center">
-            {aaa.map((p, i) => (
-              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} />
-            ))}
-          </div>
+          {aaa.length > 0 ? (
+            <div className="row g-3 justify-content-center">
+              {aaa.map((p, i) => (
+                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} />
+              ))}
+            </div>
+          ) : (
+            <div className="coming-soon">
+              <i className="bi bi-stars"></i>
+              <p>Próximamente nuevos productos</p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -552,11 +577,18 @@ export default function App() {
               Splashes corporales vibrantes y frescos, ideales para el día a día. Ligeros, duraderos y únicos.
             </p>
           </div>
-          <div className="row g-3">
-            {bodySplash.map((p, i) => (
-              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} />
-            ))}
-          </div>
+          {bodySplash.length > 0 ? (
+            <div className="row g-3">
+              {bodySplash.map((p, i) => (
+                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} />
+              ))}
+            </div>
+          ) : (
+            <div className="coming-soon">
+              <i className="bi bi-stars"></i>
+              <p>Próximamente nuevos productos</p>
+            </div>
+          )}
         </div>
       </section>
 
