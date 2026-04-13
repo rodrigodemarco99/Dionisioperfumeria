@@ -40,6 +40,10 @@ import bs02 from "@assets/imgvs2_1776041960424.jpg";
 import bs03 from "@assets/imgvs3_1776041960425.jpg";
 import bs04 from "@assets/imgvs4_1776041960425.jpg";
 import bs05 from "@assets/imgvs5_1776041960426.jpg";
+import bs06 from "@assets/Captura_de_pantalla_2026-04-12_221912_1776043185592.png";
+import bs07 from "@assets/Captura_de_pantalla_2026-04-12_221856_1776043185593.png";
+import bs08 from "@assets/Captura_de_pantalla_2026-04-12_221846_1776043185594.png";
+import bs09 from "@assets/Captura_de_pantalla_2026-04-12_221808_1776043185595.png";
 
 const WA_LINK = "https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20este%20perfume.";
 
@@ -84,6 +88,10 @@ const bodySplash = [
   { img: bs03, name: "Aqua Kiss", marca: "Victoria's Secret" },
   { img: bs04, name: "Sugar High Shimmer", marca: "Victoria's Secret" },
   { img: bs05, name: "Love Spell", marca: "Victoria's Secret" },
+  { img: bs06, name: "Coconut Musk", marca: "Al Wataniah" },
+  { img: bs07, name: "Odyssey Mandarin Sky Body Spray", marca: "Armaf" },
+  { img: bs08, name: "Ameer Al Arab", marca: "Lattafa" },
+  { img: bs09, name: "Khamrah", marca: "Lattafa" },
 ];
 
 function PerfumeCard({ img, name, marca }: { img: string; name: string; marca: string }) {
