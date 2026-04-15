@@ -28,6 +28,20 @@ import img21 from "@assets/Captura_de_pantalla_2026-04-07_102943_1776042829221.p
 import img22 from "@assets/Captura_de_pantalla_2026-04-07_103046_1776042829221.png";
 import img23 from "@assets/Captura_de_pantalla_2026-04-07_103135_1776042829220.png";
 import img24 from "@assets/Captura_de_pantalla_2026-04-07_103255_1776042829219.png";
+import img25 from "@assets/Captura_de_pantalla_2026-04-15_181140_1776288680914.png";
+import img26 from "@assets/Captura_de_pantalla_2026-04-15_181152_1776288680915.png";
+import img27 from "@assets/Captura_de_pantalla_2026-04-15_181203_1776288680916.png";
+import img28 from "@assets/Captura_de_pantalla_2026-04-15_181213_1776288680917.png";
+import img29 from "@assets/Captura_de_pantalla_2026-04-15_181249_1776288680918.png";
+import img30 from "@assets/Captura_de_pantalla_2026-04-15_181326_1776288680921.png";
+import img31 from "@assets/Captura_de_pantalla_2026-04-15_181339_1776288680921.png";
+import img32 from "@assets/Captura_de_pantalla_2026-04-15_181403_1776288680923.png";
+import img33 from "@assets/Captura_de_pantalla_2026-04-15_181416_1776288680924.png";
+import img34 from "@assets/Captura_de_pantalla_2026-04-15_181430_1776288680925.png";
+import img35 from "@assets/Captura_de_pantalla_2026-04-15_181442_1776288680926.png";
+import img36 from "@assets/Captura_de_pantalla_2026-04-15_181453_1776288680927.png";
+import img37 from "@assets/Captura_de_pantalla_2026-04-15_181502_1776288680928.png";
+import img38 from "@assets/Captura_de_pantalla_2026-04-15_181606_1776288680928.png";
 
 import aaa01 from "@assets/perfume9_1776041945777.jpg";
 import aaa02 from "@assets/perfume10_1776041945777.jpg";
@@ -48,66 +62,88 @@ import bs09 from "@assets/Captura_de_pantalla_2026-04-12_221808_1776043185595.pn
 const WA_LINK = "https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20este%20perfume.";
 
 const arabes = [
-  { img: img01, name: "Badee Al Oud Honor & Glory", marca: "Lattafa" },
-  { img: img02, name: "Badee Al Oud Oud for Glory", marca: "Lattafa" },
-  { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa" },
-  { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa" },
-  { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa" },
-  { img: img06, name: "9pm Night Out", marca: "Afnan" },
-  { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf" },
-  { img: img08, name: "Club de Nuit Woman", marca: "Armaf" },
-  { img: img09, name: "Club de Nuit Untold", marca: "Armaf" },
-  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf" },
-  { img: img11, name: "Odyssey Candee", marca: "Armaf" },
-  { img: img12, name: "Odyssey Tyrant", marca: "Armaf" },
-  { img: img13, name: "Odyssey Limoni", marca: "Armaf" },
-  { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa" },
-  { img: img15, name: "His Confession Black", marca: "Lattafa" },
-  { img: img16, name: "Her Confession", marca: "Lattafa" },
-  { img: img17, name: "Maahir Black Edition", marca: "Lattafa" },
-  { img: img18, name: "Asad Zanzibar", marca: "Lattafa" },
-  { img: img19, name: "Asad Elixir", marca: "Lattafa" },
-  { img: img20, name: "Yara", marca: "Lattafa" },
-  { img: img21, name: "Erba Pura", marca: "Xerjoff" },
-  { img: img22, name: "Viking Beirut", marca: "Bharara" },
-  { img: img23, name: "Al Noble Safeer", marca: "Lattafa" },
-  { img: img24, name: "Odyssey Mega", marca: "Armaf" },
+  { img: img01, name: "Badee Al Oud Honor & Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, almizclado" },
+  { img: img02, name: "Badee Al Oud Oud for Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, especiado" },
+  { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa", genero: "Unisex", aroma: "Oud, floral, almizclado" },
+  { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, oud, almizclado" },
+  { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar" },
+  { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado" },
+  { img: img08, name: "Club de Nuit Woman", marca: "Armaf", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img09, name: "Club de Nuit Untold", marca: "Armaf", genero: "Unisex", aroma: "Floral, amaderado, almizclado" },
+  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado" },
+  { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado" },
+  { img: img12, name: "Odyssey Tyrant", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, cuero" },
+  { img: img13, name: "Odyssey Limoni", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, fresco, verde" },
+  { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado" },
+  { img: img15, name: "His Confession Black", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, almizclado" },
+  { img: img16, name: "Her Confession", marca: "Lattafa", genero: "Mujer", aroma: "Floral, vainilla, almizclado" },
+  { img: img17, name: "Maahir Black Edition", marca: "Lattafa", genero: "Hombre", aroma: "Cuero, amaderado, especiado" },
+  { img: img18, name: "Asad Zanzibar", marca: "Lattafa", genero: "Hombre", aroma: "Acuático, amaderado, almizclado" },
+  { img: img19, name: "Asad Elixir", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado" },
+  { img: img20, name: "Yara Amarillo", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, floral, almizclado" },
+  { img: img21, name: "Erba Pura", marca: "Xerjoff", genero: "Unisex", aroma: "Cítrico, floral, almizclado" },
+  { img: img22, name: "Viking Beirut", marca: "Bharara", genero: "Hombre", aroma: "Especiado, amaderado, ámbar" },
+  { img: img23, name: "Al Noble Safeer", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, almizclado" },
+  { img: img24, name: "Odyssey Mega", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cítrico, ámbar" },
+  { img: img25, name: "Club de Nuit Urban Man Elixir", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cuero, especiado" },
+  { img: img26, name: "Club de Nuit Impériale", marca: "Armaf", genero: "Mujer", aroma: "Floral, almizclado, vainilla" },
+  { img: img27, name: "Give Me Gourmand Berry on Top", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, dulce, fresa" },
+  { img: img28, name: "Give Me Gourmand Cookie Crave", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, vainilla" },
+  { img: img29, name: "Odyssey Homme", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, almizclado" },
+  { img: img30, name: "Yara Rosa", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img31, name: "Asad", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, especiado" },
+  { img: img32, name: "9am Dive", marca: "Afnan", genero: "Unisex", aroma: "Acuático, cítrico, amaderado" },
+  { img: img33, name: "Give Me Gourmand Mallow Madness", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, almizclado" },
+  { img: img34, name: "Give Me Gourmand Whipped Pleasure", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, caramelo, almizclado" },
+  { img: img35, name: "Give Me Gourmand Vanilla Freak", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, chocolate, dulce" },
+  { img: img36, name: "Yara Fucsia", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img37, name: "Khamrah Qahwa", marca: "Lattafa", genero: "Unisex", aroma: "Café, oud, especiado" },
+  { img: img38, name: "Qaed Al Fursan", marca: "Lattafa", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado" },
 ];
 
 const aaa = [
-  { img: aaa01, name: "212 VIP Black", marca: "Carolina Herrera" },
-  { img: aaa02, name: "212 VIP Party Fever", marca: "Carolina Herrera" },
-  { img: aaa03, name: "212 VIP Rosé", marca: "Carolina Herrera" },
-  { img: aaa04, name: "212 VIP", marca: "Carolina Herrera" },
-  { img: aaa05, name: "212 VIP Rosé EDP", marca: "Carolina Herrera" },
+  { img: aaa01, name: "212 VIP Black", marca: "Carolina Herrera", genero: "Hombre", aroma: "Amaderado, cuero, almizclado" },
+  { img: aaa02, name: "212 VIP Party Fever", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: aaa03, name: "212 VIP Rosé", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: aaa04, name: "212 VIP", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, almizclado, ámbar" },
+  { img: aaa05, name: "212 VIP Rosé EDP", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, rosa, almizclado" },
 ];
 
 const bodySplash = [
-  { img: bs01, name: "Midnight Fantasy", marca: "Victoria's Secret" },
-  { img: bs02, name: "Temptation", marca: "Victoria's Secret" },
-  { img: bs03, name: "Aqua Kiss", marca: "Victoria's Secret" },
-  { img: bs04, name: "Sugar High Shimmer", marca: "Victoria's Secret" },
-  { img: bs05, name: "Love Spell", marca: "Victoria's Secret" },
-  { img: bs06, name: "Coconut Musk", marca: "Al Wataniah" },
-  { img: bs07, name: "Odyssey Mandarin Sky Body Spray", marca: "Armaf" },
-  { img: bs08, name: "Ameer Al Arab", marca: "Lattafa" },
-  { img: bs09, name: "Khamrah", marca: "Lattafa" },
+  { img: bs01, name: "Midnight Fantasy", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado" },
+  { img: bs02, name: "Temptation", marca: "Victoria's Secret", genero: "Mujer", aroma: "Oriental, vainilla, almizclado" },
+  { img: bs03, name: "Aqua Kiss", marca: "Victoria's Secret", genero: "Mujer", aroma: "Floral, acuático, fresco" },
+  { img: bs04, name: "Sugar High Shimmer", marca: "Victoria's Secret", genero: "Mujer", aroma: "Dulce, frutal, almizclado" },
+  { img: bs05, name: "Love Spell", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado" },
+  { img: bs06, name: "Coconut Musk", marca: "Al Wataniah", genero: "Mujer", aroma: "Coco, almizclado, dulce" },
+  { img: bs07, name: "Odyssey Mandarin Sky Body Spray", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, acuático, fresco" },
+  { img: bs08, name: "Ameer Al Arab", marca: "Lattafa", genero: "Unisex", aroma: "Acuático, amaderado, almizclado" },
+  { img: bs09, name: "Khamrah", marca: "Lattafa", genero: "Unisex", aroma: "Oud, especiado, amaderado" },
 ];
 
-function PerfumeCard({ img, name, marca }: { img: string; name: string; marca: string }) {
+function PerfumeCard({ img, name, marca, genero, aroma }: { img: string; name: string; marca: string; genero: string; aroma: string }) {
+  const generoClass = genero === "Hombre" ? "badge-hombre" : genero === "Mujer" ? "badge-mujer" : "badge-unisex";
   return (
     <div className="col-6 col-md-4 col-lg-3 mb-4">
       <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="perfume-card-link">
         <div className="perfume-card">
           <div className="perfume-img-wrap">
             <img src={img} alt={name} className="perfume-img" loading="lazy" />
+            <div className="aroma-overlay">
+              <div className="aroma-overlay-inner">
+                <p className="aroma-label">Notas</p>
+                <p className="aroma-text">{aroma}</p>
+                <span className="aroma-cta"><i className="bi bi-whatsapp me-1"></i>Consultar</span>
+              </div>
+            </div>
           </div>
           <div className="perfume-info">
-            <p className="perfume-marca">{marca}</p>
+            <div className="perfume-meta">
+              <p className="perfume-marca">{marca}</p>
+              <span className={`genero-badge ${generoClass}`}>{genero}</span>
+            </div>
             <p className="perfume-name">{name}</p>
-            <span className="consultar-btn">
-              <i className="bi bi-whatsapp me-1"></i>Consultar
-            </span>
           </div>
         </div>
       </a>
@@ -391,6 +427,7 @@ export default function App() {
           box-shadow: 0 16px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(184,146,42,0.2);
         }
         .perfume-img-wrap {
+          position: relative;
           overflow: hidden;
           background: #f5f0e8;
           aspect-ratio: 1 / 1;
@@ -407,42 +444,99 @@ export default function App() {
         .perfume-card:hover .perfume-img {
           transform: scale(1.08);
         }
-        .perfume-info {
+        .aroma-overlay {
+          position: absolute;
+          inset: 0;
+          background: rgba(20, 14, 8, 0.82);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+        .perfume-card:hover .aroma-overlay {
+          opacity: 1;
+        }
+        .aroma-overlay-inner {
+          text-align: center;
           padding: 1rem;
+        }
+        .aroma-label {
+          font-size: 0.6rem;
+          letter-spacing: 0.22em;
+          text-transform: uppercase;
+          color: #b8922a;
+          font-weight: 700;
+          margin-bottom: 0.35rem;
+        }
+        .aroma-text {
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 0.95rem;
+          color: #f5f0e8;
+          line-height: 1.4;
+          margin-bottom: 0.8rem;
+        }
+        .aroma-cta {
+          display: inline-flex;
+          align-items: center;
+          font-size: 0.65rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #fff;
+          background: #25D366;
+          padding: 0.3rem 0.75rem;
+          border-radius: 2px;
+        }
+
+        .perfume-info {
+          padding: 0.75rem 1rem 0.85rem;
           text-align: center;
           background: #fff;
         }
+        .perfume-meta {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          margin-bottom: 0.25rem;
+          flex-wrap: wrap;
+        }
         .perfume-marca {
-          font-size: 0.65rem;
+          font-size: 0.6rem;
           letter-spacing: 0.2em;
           text-transform: uppercase;
           color: #b8922a;
-          margin-bottom: 0.2rem;
+          margin-bottom: 0;
           font-weight: 600;
+        }
+        .genero-badge {
+          font-size: 0.55rem;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          padding: 0.15rem 0.45rem;
+          border-radius: 20px;
+          line-height: 1;
+        }
+        .badge-hombre {
+          background: #dbeafe;
+          color: #1d4ed8;
+        }
+        .badge-mujer {
+          background: #fce7f3;
+          color: #be185d;
+        }
+        .badge-unisex {
+          background: #f3e8ff;
+          color: #7c3aed;
         }
         .perfume-name {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1rem;
           color: #1a1a1a;
-          margin-bottom: 0.7rem;
+          margin-bottom: 0;
           line-height: 1.3;
-        }
-        .consultar-btn {
-          display: inline-flex;
-          align-items: center;
-          font-size: 0.7rem;
-          font-weight: 600;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          color: #25D366;
-          border: 1px solid rgba(37,211,102,0.5);
-          padding: 0.3rem 0.8rem;
-          transition: background 0.2s, color 0.2s;
-          border-radius: 2px;
-        }
-        .perfume-card:hover .consultar-btn {
-          background: #25D366;
-          color: #fff;
         }
 
         /* COMING SOON */
@@ -519,10 +613,11 @@ export default function App() {
         }
 
         @media (max-width: 575px) {
-          .perfume-info { padding: 0.75rem; }
-          .perfume-name { font-size: 0.85rem; }
-          .perfume-marca { font-size: 0.6rem; }
-          .consultar-btn { font-size: 0.62rem; padding: 0.25rem 0.6rem; }
+          .perfume-info { padding: 0.6rem 0.75rem 0.75rem; }
+          .perfume-name { font-size: 0.82rem; }
+          .perfume-marca { font-size: 0.55rem; }
+          .genero-badge { font-size: 0.5rem; }
+          .aroma-text { font-size: 0.82rem; }
           .wa-bar { font-size: 0.75rem; padding: 0.75rem 0.5rem; }
         }
       `}</style>
@@ -595,7 +690,7 @@ export default function App() {
           </div>
           <div className="row g-3">
             {arabes.map((p, i) => (
-              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} />
+              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} />
             ))}
           </div>
         </div>
@@ -615,7 +710,7 @@ export default function App() {
           {aaa.length > 0 ? (
             <div className="row g-3 justify-content-center">
               {aaa.map((p, i) => (
-                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} />
+                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} />
               ))}
             </div>
           ) : (
@@ -641,7 +736,7 @@ export default function App() {
           {bodySplash.length > 0 ? (
             <div className="row g-3">
               {bodySplash.map((p, i) => (
-                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} />
+                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} />
               ))}
             </div>
           ) : (
