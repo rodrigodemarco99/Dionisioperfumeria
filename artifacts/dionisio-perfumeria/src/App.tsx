@@ -43,11 +43,16 @@ import img36 from "@assets/Captura_de_pantalla_2026-04-15_181453_1776288680927.p
 import img37 from "@assets/Captura_de_pantalla_2026-04-15_181502_1776288680928.png";
 import img38 from "@assets/Captura_de_pantalla_2026-04-15_181606_1776288680928.png";
 
-import aaa01 from "@assets/perfume9_1776041945777.jpg";
-import aaa02 from "@assets/perfume10_1776041945777.jpg";
-import aaa03 from "@assets/perfume11_1776041945778.jpg";
-import aaa04 from "@assets/perfume12_1776041945779.jpg";
-import aaa05 from "@assets/perfume13_1776041945779.jpg";
+import aaa01 from "@assets/image_1776289233879.png";
+import aaa02 from "@assets/image_1776289346603.png";
+import aaa03 from "@assets/image_1776289481298.png";
+import aaa04 from "@assets/image_1776289521616.png";
+import aaa05 from "@assets/image_1776289571629.png";
+import aaa06 from "@assets/image_1776289687247.png";
+import aaa07 from "@assets/image_1776289727092.png";
+import aaa08 from "@assets/image_1776289755913.png";
+import aaa09 from "@assets/image_1776289823193.png";
+import aaa10 from "@assets/image_1776289843232.png";
 
 import bs01 from "@assets/imgvs1_1776041960423.jpg";
 import bs02 from "@assets/imgvs2_1776041960424.jpg";
@@ -59,7 +64,8 @@ import bs07 from "@assets/Captura_de_pantalla_2026-04-12_221856_1776043185593.pn
 import bs08 from "@assets/Captura_de_pantalla_2026-04-12_221846_1776043185594.png";
 import bs09 from "@assets/Captura_de_pantalla_2026-04-12_221808_1776043185595.png";
 
-const WA_LINK = "https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20este%20perfume.";
+const waLink = (name: string) =>
+  "https://wa.me/5491132393925?text=" + encodeURIComponent("Hola! Me interesa el perfume: " + name);
 
 const arabes = [
   { img: img01, name: "Badee Al Oud Honor & Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, almizclado" },
@@ -103,11 +109,16 @@ const arabes = [
 ];
 
 const aaa = [
-  { img: aaa01, name: "212 VIP Black", marca: "Carolina Herrera", genero: "Hombre", aroma: "Amaderado, cuero, almizclado" },
-  { img: aaa02, name: "212 VIP Party Fever", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
-  { img: aaa03, name: "212 VIP Rosé", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
-  { img: aaa04, name: "212 VIP", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, almizclado, ámbar" },
-  { img: aaa05, name: "212 VIP Rosé EDP", marca: "Carolina Herrera", genero: "Mujer", aroma: "Floral, rosa, almizclado" },
+  { img: aaa01, name: "Le Male Le Parfum", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Lavanda, vainilla, cuero, almizclado" },
+  { img: aaa02, name: "Invictus Legend", marca: "Paco Rabanne", genero: "Hombre", aroma: "Acuático, amaderado, almizclado" },
+  { img: aaa03, name: "Invictus Onyx", marca: "Paco Rabanne", genero: "Hombre", aroma: "Especiado, amaderado, cuero" },
+  { img: aaa04, name: "Invictus EDT", marca: "Paco Rabanne", genero: "Hombre", aroma: "Acuático, ambar, almizclado" },
+  { img: aaa05, name: "212 VIP Men", marca: "Carolina Herrera", genero: "Hombre", aroma: "Amaderado, almizclado, ámbar" },
+  { img: aaa06, name: "Scandal Pour Homme EDT Azul", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Bergamota, ámbar, almizclado" },
+  { img: aaa07, name: "Scandal Pour Homme EDT", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Bergamota, cuero, almizclado" },
+  { img: aaa08, name: "Scandal Le Parfum", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Cuero, ámbar, almizclado" },
+  { img: aaa09, name: "Phantom EDT", marca: "Paco Rabanne", genero: "Hombre", aroma: "Vainilla, lavanda, amaderado" },
+  { img: aaa10, name: "Bad Boy EDT", marca: "Carolina Herrera", genero: "Hombre", aroma: "Cuero, cacao, amaderado" },
 ];
 
 const bodySplash = [
@@ -126,7 +137,7 @@ function PerfumeCard({ img, name, marca, genero, aroma }: { img: string; name: s
   const generoClass = genero === "Hombre" ? "badge-hombre" : genero === "Mujer" ? "badge-mujer" : "badge-unisex";
   return (
     <div className="col-6 col-md-4 col-lg-3 mb-4">
-      <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="perfume-card-link">
+      <a href={waLink(name)} target="_blank" rel="noopener noreferrer" className="perfume-card-link">
         <div className="perfume-card">
           <div className="perfume-img-wrap">
             <img src={img} alt={name} className="perfume-img" loading="lazy" />
@@ -666,7 +677,7 @@ export default function App() {
             Dionisio<br /><span>Perfumería</span>
           </h1>
           <p className="hero-subtitle">El arte del buen olfato</p>
-          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="hero-cta">
+          <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="hero-cta">
             <i className="bi bi-whatsapp"></i>
             Consultar por WhatsApp
           </a>
@@ -755,7 +766,7 @@ export default function App() {
       </footer>
 
       {/* WHATSAPP FLOATING BAR */}
-      <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="wa-bar">
+      <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="wa-bar">
         <i className="bi bi-whatsapp"></i>
         ¡Cualquier perfume que no veas, consultá acá!
       </a>
