@@ -8,11 +8,9 @@ import img03 from "@assets/Captura_de_pantalla_2026-03-10_160524_1776041552665.j
 import img04 from "@assets/Captura_de_pantalla_2026-03-10_160536_1776041552666.jpg";
 import img05 from "@assets/Captura_de_pantalla_2026-03-10_160548_1776041552666.jpg";
 import img06 from "@assets/Captura_de_pantalla_2026-03-10_160637_1776041552670.jpg";
-
 import img07 from "@assets/Captura_de_pantalla_2026-03-10_160421_1776041552662.jpg";
 import img08 from "@assets/Captura_de_pantalla_2026-03-10_160434_1776041552662.jpg";
 import img09 from "@assets/Captura_de_pantalla_2026-03-10_160446_1776041552663.jpg";
-
 import img10 from "@assets/Captura_de_pantalla_2026-03-10_160345_1776041552661.jpg";
 import img11 from "@assets/Captura_de_pantalla_2026-03-10_160601_1776041552667.jpg";
 import img12 from "@assets/Captura_de_pantalla_2026-03-10_160615_1776041552667.jpg";
@@ -68,44 +66,44 @@ const waLink = (name: string) =>
   "https://wa.me/5491132393925?text=" + encodeURIComponent("Hola! Me interesa el perfume: " + name);
 
 const arabes = [
-  { img: img01, name: "Badee Al Oud Honor & Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, almizclado", precio: "$65,000" },
-  { img: img02, name: "Badee Al Oud Oud for Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, especiado", precio: "$65,000" },
-  { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa", genero: "Unisex", aroma: "Oud, floral, almizclado", precio: "$65,000" },
-  { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, oud, almizclado", precio: "$65,000" },
-  { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: "$65,000" },
-  { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar", precio: "$65,000" },
-  { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado", precio: "$65,000" },
-  { img: img08, name: "Club de Nuit Woman", marca: "Armaf", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: "$65,000" },
-  { img: img09, name: "Club de Nuit Untold", marca: "Armaf", genero: "Unisex", aroma: "Floral, amaderado, almizclado", precio: "$65,000" },
-  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado", precio: "$65,000" },
-  { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado", precio: "$65,000" },
-  { img: img12, name: "Odyssey Tyrant", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, cuero", precio: "$65,000" },
-  { img: img13, name: "Odyssey Limoni", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, fresco, verde", precio: "$65,000" },
-  { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado", precio: "$65,000" },
-  { img: img15, name: "His Confession Black", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, almizclado", precio: "$65,000" },
-  { img: img16, name: "Her Confession", marca: "Lattafa", genero: "Mujer", aroma: "Floral, vainilla, almizclado", precio: "$65,000" },
-  { img: img17, name: "Maahir Black Edition", marca: "Lattafa", genero: "Hombre", aroma: "Cuero, amaderado, especiado", precio: "$65,000" },
-  { img: img18, name: "Asad Zanzibar", marca: "Lattafa", genero: "Hombre", aroma: "Acuático, amaderado, almizclado", precio: "$65,000" },
-  { img: img19, name: "Asad Elixir", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado", precio: "$65,000" },
-  { img: img20, name: "Yara Amarillo", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, floral, almizclado", precio: "$65,000" },
-  { img: img21, name: "Erba Pura", marca: "Xerjoff", genero: "Unisex", aroma: "Cítrico, floral, almizclado", precio: "$65,000" },
-  { img: img22, name: "Viking Beirut", marca: "Bharara", genero: "Hombre", aroma: "Especiado, amaderado, ámbar", precio: "$65,000" },
-  { img: img23, name: "Al Noble Safeer", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, almizclado", precio: "$65,000" },
-  { img: img24, name: "Odyssey Mega", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cítrico, ámbar", precio: "$65,000" },
-  { img: img25, name: "Club de Nuit Urban Man Elixir", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cuero, especiado", precio: "$65,000" },
-  { img: img26, name: "Club de Nuit Impériale", marca: "Armaf", genero: "Mujer", aroma: "Floral, almizclado, vainilla", precio: "$65,000" },
-  { img: img27, name: "Give Me Gourmand Berry on Top", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, dulce, fresa", precio: "$65,000" },
-  { img: img28, name: "Give Me Gourmand Cookie Crave", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, vainilla", precio: "$65,000" },
-  { img: img29, name: "Odyssey Homme", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, almizclado", precio: "$65,000" },
-  { img: img30, name: "Yara Rosa", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: "$65,000" },
-  { img: img31, name: "Asad", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, especiado", precio: "$65,000" },
-  { img: img32, name: "9am Dive", marca: "Afnan", genero: "Unisex", aroma: "Acuático, cítrico, amaderado", precio: "$65,000" },
-  { img: img33, name: "Give Me Gourmand Mallow Madness", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, almizclado", precio: "$65,000" },
-  { img: img34, name: "Give Me Gourmand Whipped Pleasure", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, caramelo, almizclado", precio: "$65,000" },
-  { img: img35, name: "Give Me Gourmand Vanilla Freak", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, chocolate, dulce", precio: "$65,000" },
-  { img: img36, name: "Yara Fucsia", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: "$65,000" },
-  { img: img37, name: "Khamrah Qahwa", marca: "Lattafa", genero: "Unisex", aroma: "Café, oud, especiado", precio: "$65,000" },
-  { img: img38, name: "Qaed Al Fursan", marca: "Lattafa", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado", precio: "$65,000" },
+  { img: img01, name: "Badee Al Oud Honor & Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, almizclado" },
+  { img: img02, name: "Badee Al Oud Oud for Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, especiado" },
+  { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa", genero: "Unisex", aroma: "Oud, floral, almizclado" },
+  { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, oud, almizclado" },
+  { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar" },
+  { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado" },
+  { img: img08, name: "Club de Nuit Woman", marca: "Armaf", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img09, name: "Club de Nuit Untold", marca: "Armaf", genero: "Unisex", aroma: "Floral, amaderado, almizclado" },
+  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado" },
+  { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado" },
+  { img: img12, name: "Odyssey Tyrant", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, cuero" },
+  { img: img13, name: "Odyssey Limoni", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, fresco, verde" },
+  { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado" },
+  { img: img15, name: "His Confession Black", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, almizclado" },
+  { img: img16, name: "Her Confession", marca: "Lattafa", genero: "Mujer", aroma: "Floral, vainilla, almizclado" },
+  { img: img17, name: "Maahir Black Edition", marca: "Lattafa", genero: "Hombre", aroma: "Cuero, amaderado, especiado" },
+  { img: img18, name: "Asad Zanzibar", marca: "Lattafa", genero: "Hombre", aroma: "Acuático, amaderado, almizclado" },
+  { img: img19, name: "Asad Elixir", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado" },
+  { img: img20, name: "Yara Amarillo", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, floral, almizclado" },
+  { img: img21, name: "Erba Pura", marca: "Xerjoff", genero: "Unisex", aroma: "Cítrico, floral, almizclado" },
+  { img: img22, name: "Viking Beirut", marca: "Bharara", genero: "Hombre", aroma: "Especiado, amaderado, ámbar" },
+  { img: img23, name: "Al Noble Safeer", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, almizclado" },
+  { img: img24, name: "Odyssey Mega", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cítrico, ámbar" },
+  { img: img25, name: "Club de Nuit Urban Man Elixir", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cuero, especiado" },
+  { img: img26, name: "Club de Nuit Impériale", marca: "Armaf", genero: "Mujer", aroma: "Floral, almizclado, vainilla" },
+  { img: img27, name: "Give Me Gourmand Berry on Top", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, dulce, fresa" },
+  { img: img28, name: "Give Me Gourmand Cookie Crave", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, vainilla" },
+  { img: img29, name: "Odyssey Homme", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, almizclado" },
+  { img: img30, name: "Yara Rosa", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img31, name: "Asad", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, especiado" },
+  { img: img32, name: "9am Dive", marca: "Afnan", genero: "Unisex", aroma: "Acuático, cítrico, amaderado" },
+  { img: img33, name: "Give Me Gourmand Mallow Madness", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, almizclado" },
+  { img: img34, name: "Give Me Gourmand Whipped Pleasure", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, caramelo, almizclado" },
+  { img: img35, name: "Give Me Gourmand Vanilla Freak", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, chocolate, dulce" },
+  { img: img36, name: "Yara Fucsia", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img37, name: "Khamrah Qahwa", marca: "Lattafa", genero: "Unisex", aroma: "Café, oud, especiado" },
+  { img: img38, name: "Qaed Al Fursan", marca: "Lattafa", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado" },
 ];
 
 const aaa = [
@@ -133,7 +131,9 @@ const bodySplash = [
   { img: bs09, name: "Khamrah", marca: "Lattafa", genero: "Unisex", aroma: "Oud, especiado, amaderado" },
 ];
 
-function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string; name: string; marca: string; genero: string; aroma: string; precio?: string }) {
+const destacados = [arabes[6], arabes[30], arabes[36], arabes[0], arabes[7], arabes[10]];
+
+function PerfumeCard({ img, name, marca, genero, aroma }: { img: string; name: string; marca: string; genero: string; aroma: string }) {
   const generoClass = genero === "Hombre" ? "badge-hombre" : genero === "Mujer" ? "badge-mujer" : "badge-unisex";
   return (
     <div className="col-6 col-md-4 col-lg-3 mb-4">
@@ -141,13 +141,11 @@ function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string;
         <div className="perfume-card">
           <div className="perfume-img-wrap">
             <img src={img} alt={name} className="perfume-img" loading="lazy" />
-            {precio && <div className="precio-badge">{precio}</div>}
             <div className="aroma-overlay">
               <div className="aroma-overlay-inner">
                 <p className="aroma-label">Notas</p>
                 <p className="aroma-text">{aroma}</p>
-                {precio && <p className="aroma-precio">{precio}</p>}
-                <span className="aroma-cta"><i className="bi bi-whatsapp me-1"></i>Consultar</span>
+                <span className="aroma-cta"><i className="bi bi-whatsapp"></i> Consultar</span>
               </div>
             </div>
           </div>
@@ -157,7 +155,6 @@ function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string;
               <span className={`genero-badge ${generoClass}`}>{genero}</span>
             </div>
             <p className="perfume-name">{name}</p>
-            {precio && <p className="perfume-precio">{precio}</p>}
           </div>
         </div>
       </a>
@@ -165,16 +162,15 @@ function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string;
   );
 }
 
+const navItems = [
+  { label: "Más Buscados", href: "#destacados" },
+  { label: "Árabes", href: "#arabes" },
+  { label: "AAA", href: "#aaa" },
+  { label: "Body Splash", href: "#body-splash" },
+];
+
 export default function App() {
   useEffect(() => {
-    if (!document.getElementById('bootstrap-js')) {
-      const script = document.createElement('script');
-      script.id = 'bootstrap-js';
-      script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
-
     const links = document.querySelectorAll('a.nav-scroll-link');
     links.forEach((link) => {
       link.addEventListener('click', (e) => {
@@ -183,14 +179,13 @@ export default function App() {
         if (target) {
           const el = document.querySelector(target);
           if (el) {
-            const navHeight = document.querySelector('.dionisio-navbar')?.clientHeight ?? 70;
-            const top = (el as HTMLElement).offsetTop - navHeight;
+            const header = document.querySelector('.top-shipping-bar');
+            const nav = document.querySelector('.dionisio-navbar');
+            const headerH = header?.clientHeight ?? 0;
+            const navH = nav?.clientHeight ?? 56;
+            const top = (el as HTMLElement).offsetTop - headerH - navH;
             window.scrollTo({ top, behavior: 'smooth' });
           }
-        }
-        const navbarCollapse = document.getElementById('mainNavbar');
-        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-          navbarCollapse.classList.remove('show');
         }
       });
     });
@@ -210,60 +205,142 @@ export default function App() {
   return (
     <>
       <style>{`
-        *, *::before, *::after { box-sizing: border-box; }
+        :root {
+          --gold: #d4a853;
+          --gold-light: #f0d080;
+          --gold-dark: #b8922a;
+          --bg-black: #0a0a0a;
+          --bg-card: #121212;
+          --bg-elevated: #1a1a1a;
+          --text-primary: #f5f0eb;
+          --text-secondary: #a09888;
+          --text-muted: #6b6558;
+          --border-dim: rgba(212, 168, 83, 0.15);
+          --border-gold: rgba(212, 168, 83, 0.3);
+          --font-serif: 'Playfair Display', 'Cormorant Garamond', serif;
+          --font-sans: 'Montserrat', 'Raleway', sans-serif;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-          font-family: 'Raleway', sans-serif;
-          background-color: #ffffff;
-          color: #1a1a1a;
-          padding-bottom: 70px;
+          font-family: var(--font-sans);
+          background: var(--bg-black);
+          color: var(--text-primary);
+          -webkit-font-smoothing: antialiased;
         }
 
-        /* NAVBAR */
-        .dionisio-navbar {
-          background: rgba(255, 255, 255, 0.92);
-          backdrop-filter: blur(12px);
-          -webkit-backdrop-filter: blur(12px);
-          border-bottom: 1px solid #e8e2d8;
-          transition: background 0.3s, box-shadow 0.3s;
+        img { max-width: 100%; display: block; }
+
+        /* ===== SHIPPING BAR ===== */
+        .top-shipping-bar {
           position: fixed;
           top: 0;
-          width: 100%;
-          z-index: 1000;
-        }
-        .dionisio-navbar.scrolled {
-          background: rgba(255, 255, 255, 0.99);
-          box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-        }
-        .navbar-brand-text {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 1.5rem;
-          font-weight: 600;
-          color: #b8922a !important;
-          letter-spacing: 0.05em;
-        }
-        .nav-link-custom {
-          font-family: 'Raleway', sans-serif;
-          font-size: 0.82rem;
+          left: 0;
+          right: 0;
+          z-index: 1001;
+          background: linear-gradient(90deg, #1a1008, #2a1a0a, #1a1008);
+          border-bottom: 1px solid var(--border-gold);
+          padding: 0.45rem 1rem;
+          text-align: center;
+          font-size: 0.72rem;
           font-weight: 500;
-          color: #444 !important;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          padding: 0.5rem 1rem !important;
-          transition: color 0.2s;
-          text-decoration: none;
+          letter-spacing: 0.04em;
+          color: var(--gold-light);
         }
-        .nav-link-custom:hover {
-          color: #b8922a !important;
-        }
-        .navbar-toggler {
-          border: 1px solid rgba(184,146,42,0.4) !important;
-        }
-        .navbar-toggler-icon {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28100,80,20,0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        .top-shipping-bar span {
+          color: var(--text-primary);
         }
 
-        /* HERO */
+        /* ===== NAVBAR ===== */
+        .dionisio-navbar {
+          position: fixed;
+          top: 34px;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          background: rgba(10, 10, 10, 0.85);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border-bottom: 1px solid var(--border-dim);
+          transition: background 0.3s, box-shadow 0.3s;
+        }
+        .dionisio-navbar.scrolled {
+          background: rgba(10, 10, 10, 0.97);
+          box-shadow: 0 2px 24px rgba(0,0,0,0.4);
+        }
+        .navbar-inner {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0.55rem 1rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        .navbar-brand-text {
+          font-family: var(--font-serif);
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: var(--gold) !important;
+          letter-spacing: 0.04em;
+          text-decoration: none;
+          line-height: 1;
+        }
+        .navbar-nav {
+          display: flex;
+          gap: 0.2rem;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+        .nav-link-custom {
+          font-size: 0.65rem;
+          font-weight: 500;
+          color: var(--text-secondary) !important;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          padding: 0.4rem 0.65rem;
+          text-decoration: none;
+          transition: color 0.2s;
+          white-space: nowrap;
+        }
+        .nav-link-custom:hover {
+          color: var(--gold) !important;
+        }
+        .navbar-toggler {
+          display: none;
+          background: none;
+          border: 1px solid var(--border-gold);
+          padding: 0.35rem 0.5rem;
+          cursor: pointer;
+          color: var(--gold);
+          font-size: 1.2rem;
+          line-height: 1;
+        }
+        @media (max-width: 768px) {
+          .navbar-toggler {
+            display: block;
+          }
+          .navbar-nav {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            padding: 0.5rem 0;
+            gap: 0;
+          }
+          .navbar-nav.open {
+            display: flex;
+          }
+          .nav-link-custom {
+            padding: 0.6rem 0;
+            border-top: 1px solid var(--border-dim);
+          }
+          .navbar-inner {
+            flex-wrap: wrap;
+          }
+        }
+
+        /* ===== HERO ===== */
         .hero-section {
           position: relative;
           min-height: 100svh;
@@ -272,101 +349,87 @@ export default function App() {
           justify-content: center;
           text-align: center;
           overflow: hidden;
-          background-color: #f5f0e8;
+          margin-top: 0;
+          padding-top: 90px;
         }
         .hero-bg {
           position: absolute;
           inset: 0;
           background-image: url('${heroImg}');
           background-size: cover;
-          background-position: center top;
-          filter: brightness(0.55);
+          background-position: center 30%;
+          filter: brightness(0.35) saturate(1.1);
         }
         .hero-overlay {
           position: absolute;
           inset: 0;
-          background: linear-gradient(to bottom,
-            rgba(255,255,255,0.1) 0%,
-            rgba(255,255,255,0.05) 40%,
-            rgba(255,255,255,0.55) 80%,
-            rgba(255,255,255,1) 100%
+          background: linear-gradient(to top,
+            rgba(10,10,10,1) 0%,
+            rgba(10,10,10,0.6) 50%,
+            rgba(10,10,10,0.3) 100%
           );
         }
         .hero-content {
           position: relative;
           z-index: 2;
           padding: 2rem 1.5rem;
-        }
-        .hero-welcome {
-          font-family: 'Raleway', sans-serif;
-          font-size: clamp(0.9rem, 2.8vw, 1.15rem);
-          font-weight: 300;
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          color: #fff;
-          margin-bottom: 0.4rem;
-          text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+          max-width: 720px;
         }
         .hero-badge {
           display: inline-block;
-          font-size: 0.7rem;
-          font-weight: 500;
+          font-size: 0.6rem;
+          font-weight: 600;
           letter-spacing: 0.25em;
           text-transform: uppercase;
-          color: #fff;
-          border: 1px solid rgba(255,255,255,0.7);
-          padding: 0.35rem 1rem;
-          margin-bottom: 1.5rem;
+          color: var(--gold);
+          border: 1px solid var(--border-gold);
+          padding: 0.3rem 0.9rem;
+          margin-bottom: 1.2rem;
         }
         .hero-title {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(3rem, 10vw, 6.5rem);
-          font-weight: 300;
-          line-height: 1.05;
+          font-family: var(--font-serif);
+          font-size: clamp(2.2rem, 8vw, 4.5rem);
+          font-weight: 400;
+          line-height: 1.08;
           color: #fff;
-          margin-bottom: 0.5rem;
+          margin-bottom: 1rem;
           letter-spacing: -0.01em;
-          text-shadow: 0 2px 16px rgba(0,0,0,0.3);
         }
         .hero-title span {
-          color: #f0d080;
+          color: var(--gold-light);
           font-style: italic;
         }
         .hero-subtitle {
-          font-family: 'Raleway', sans-serif;
-          font-size: clamp(0.8rem, 2.5vw, 1rem);
+          font-size: clamp(0.75rem, 2vw, 0.9rem);
           font-weight: 300;
-          letter-spacing: 0.2em;
+          letter-spacing: 0.15em;
           text-transform: uppercase;
-          color: rgba(255,255,255,0.85);
+          color: var(--text-secondary);
           margin-bottom: 2.5rem;
-          text-shadow: 0 1px 6px rgba(0,0,0,0.3);
         }
         .hero-cta {
           display: inline-flex;
           align-items: center;
           gap: 0.6rem;
-          background: #25D366;
-          color: #fff;
-          font-family: 'Raleway', sans-serif;
+          background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+          color: #0a0a0a;
+          font-family: var(--font-sans);
           font-size: 0.78rem;
           font-weight: 700;
-          letter-spacing: 0.18em;
+          letter-spacing: 0.12em;
           text-transform: uppercase;
-          padding: 0.85rem 2.2rem;
+          padding: 1rem 2.5rem;
           text-decoration: none;
-          transition: background 0.25s, transform 0.2s;
+          transition: transform 0.25s, box-shadow 0.25s;
           border: none;
-          border-radius: 2px;
         }
         .hero-cta:hover {
-          background: #1ebe5a;
-          color: #fff;
           transform: translateY(-2px);
+          box-shadow: 0 8px 32px rgba(212,168,83,0.25);
         }
         .hero-scroll-hint {
           position: absolute;
-          bottom: 2rem;
+          bottom: 2.5rem;
           left: 50%;
           transform: translateX(-50%);
           z-index: 2;
@@ -374,8 +437,8 @@ export default function App() {
           flex-direction: column;
           align-items: center;
           gap: 0.4rem;
-          color: rgba(255,255,255,0.6);
-          font-size: 0.68rem;
+          color: var(--text-muted);
+          font-size: 0.6rem;
           letter-spacing: 0.15em;
           text-transform: uppercase;
           animation: bounce 2s infinite;
@@ -385,201 +448,167 @@ export default function App() {
           50% { transform: translateX(-50%) translateY(6px); }
         }
 
-        /* DÍA DEL PADRE BANNER */
-        .dia-del-padre-banner {
-          background: linear-gradient(135deg, #0b1a2e 0%, #1a3a5c 50%, #0b1a2e 100%);
-          padding: 3.5rem 1rem;
-          border-top: 3px solid #c9a84c;
-          border-bottom: 3px solid #c9a84c;
-          position: relative;
-          overflow: hidden;
+        /* ===== SECTIONS ===== */
+        .perfume-section {
+          padding: 4rem 0;
         }
-        .dia-del-padre-banner::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(201,168,76,0.03) 40px, rgba(201,168,76,0.03) 80px);
-          pointer-events: none;
-        }
-        .banner-content {
-          position: relative;
-          z-index: 1;
-        }
-        .banner-icon {
-          font-size: 2.5rem;
-          color: #c9a84c;
-          margin-bottom: 0.5rem;
-        }
-        .banner-tag {
-          font-size: 0.7rem;
-          letter-spacing: 0.3em;
-          text-transform: uppercase;
-          color: #c9a84c;
-          font-weight: 600;
-          margin-bottom: 0.4rem;
-        }
-        .banner-title {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(2.2rem, 6vw, 3.5rem);
-          font-weight: 400;
-          color: #fff;
-          margin-bottom: 0.5rem;
-        }
-        .banner-desc {
-          font-size: 1rem;
-          color: rgba(255,255,255,0.8);
-          margin-bottom: 0.8rem;
-        }
-        .banner-desc strong {
-          color: #f0d080;
-        }
-        .banner-precio {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(2.5rem, 7vw, 4rem);
-          font-weight: 700;
-          color: #f0d080;
-          line-height: 1;
-          margin-bottom: 0.3rem;
-          text-shadow: 0 0 30px rgba(201,168,76,0.3);
-        }
-        .banner-sub {
-          font-size: 0.78rem;
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          color: rgba(255,255,255,0.5);
-          margin-bottom: 1.5rem;
-        }
-        .banner-cta {
-          display: inline-flex;
-          align-items: center;
-          gap: 0.4rem;
-          background: #c9a84c;
-          color: #0b1a2e;
-          font-size: 0.75rem;
-          font-weight: 700;
-          letter-spacing: 0.18em;
-          text-transform: uppercase;
-          padding: 0.7rem 1.8rem;
-          text-decoration: none;
-          transition: background 0.25s;
-        }
-        .banner-cta:hover {
-          background: #dbb95a;
-          color: #0b1a2e;
-        }
-
-        /* PRECIO BADGE ON CARDS */
-        .precio-badge {
-          position: absolute;
-          top: 8px;
-          right: 8px;
-          background: #c9a84c;
-          color: #0b1a2e;
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 0.85rem;
-          font-weight: 700;
-          padding: 0.25rem 0.6rem;
-          z-index: 2;
-          line-height: 1;
-        }
-        .aroma-precio {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 1.1rem;
-          color: #f0d080;
-          font-weight: 700;
-          margin-bottom: 0.6rem;
-        }
-        .perfume-precio {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 1.05rem;
-          color: #c9a84c;
-          font-weight: 700;
-          margin-bottom: 0;
-          margin-top: 0.2rem;
-        }
-
-        /* SECTION HEADERS */
-        .section-divider {
-          width: 50px;
-          height: 2px;
-          background: #b8922a;
-          margin: 0 auto 1.2rem;
+        .section-header {
+          text-align: center;
+          margin-bottom: 3rem;
+          padding: 0 1rem;
         }
         .section-tag {
-          font-size: 0.68rem;
+          font-size: 0.6rem;
           letter-spacing: 0.25em;
           text-transform: uppercase;
-          color: #b8922a;
-          margin-bottom: 0.6rem;
+          color: var(--gold);
+          margin-bottom: 0.5rem;
           font-weight: 600;
         }
         .section-title {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: clamp(2rem, 6vw, 3.2rem);
+          font-family: var(--font-serif);
+          font-size: clamp(1.8rem, 5vw, 2.8rem);
           font-weight: 400;
-          color: #1a1a1a;
-          margin-bottom: 0.5rem;
+          color: #fff;
+          margin-bottom: 0.75rem;
           line-height: 1.1;
         }
         .section-desc {
-          font-size: 0.88rem;
-          color: #777;
+          font-size: 0.82rem;
+          color: var(--text-secondary);
           max-width: 480px;
           margin: 0 auto;
           line-height: 1.7;
         }
-        .perfume-section {
-          padding: 5rem 0 4rem;
-          background: #ffffff;
-        }
-        .perfume-section:nth-child(even) {
-          background: #f8f6f2;
+        .section-divider {
+          width: 40px;
+          height: 2px;
+          background: var(--gold);
+          margin: 0 auto 1rem;
         }
 
-        /* PERFUME CARDS */
+        /* ===== DESTACADOS ===== */
+        #destacados {
+          background: var(--bg-black);
+        }
+        .destacados-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0 1rem;
+        }
+        .destacado-card {
+          background: var(--bg-card);
+          border: 1px solid var(--border-dim);
+          overflow: hidden;
+          transition: border-color 0.3s, transform 0.3s;
+          text-decoration: none;
+          display: block;
+        }
+        .destacado-card:hover {
+          border-color: var(--border-gold);
+          transform: translateY(-4px);
+        }
+        .destacado-img-wrap {
+          aspect-ratio: 1 / 1;
+          overflow: hidden;
+          background: #1a1410;
+        }
+        .destacado-img-wrap img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s;
+        }
+        .destacado-card:hover .destacado-img-wrap img {
+          transform: scale(1.06);
+        }
+        .destacado-info {
+          padding: 0.7rem 0.85rem 0.9rem;
+          text-align: center;
+        }
+        .destacado-marca {
+          font-size: 0.55rem;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: var(--gold);
+          margin-bottom: 0.15rem;
+          font-weight: 600;
+        }
+        .destacado-name {
+          font-family: var(--font-serif);
+          font-size: 0.92rem;
+          color: #fff;
+          margin-bottom: 0.6rem;
+          line-height: 1.3;
+        }
+        .destacado-wa {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          background: #25D366;
+          color: #fff;
+          font-size: 0.65rem;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          padding: 0.45rem 1rem;
+          text-decoration: none;
+          transition: background 0.2s;
+          border-radius: 2px;
+        }
+        .destacado-wa:hover {
+          background: #1ebe5a;
+        }
+
+        @media (max-width: 600px) {
+          .destacados-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+          }
+        }
+
+        /* ===== PERFUME CARDS ===== */
         .perfume-card-link {
           text-decoration: none;
           display: block;
         }
         .perfume-card {
-          background: #ffffff;
-          border: 1px solid #e8e2d8;
+          background: var(--bg-card);
+          border: 1px solid var(--border-dim);
           overflow: hidden;
-          transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-          cursor: pointer;
+          transition: border-color 0.3s, transform 0.3s;
         }
         .perfume-card:hover {
-          border-color: #b8922a;
-          transform: translateY(-6px);
-          box-shadow: 0 16px 40px rgba(0,0,0,0.1), 0 0 0 1px rgba(184,146,42,0.2);
+          border-color: var(--border-gold);
+          transform: translateY(-4px);
         }
         .perfume-img-wrap {
           position: relative;
           overflow: hidden;
-          background: #f5f0e8;
+          background: #1a1410;
           aspect-ratio: 1 / 1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
         }
         .perfume-img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: transform 0.45s ease;
+          transition: transform 0.4s;
         }
         .perfume-card:hover .perfume-img {
-          transform: scale(1.08);
+          transform: scale(1.06);
         }
         .aroma-overlay {
           position: absolute;
           inset: 0;
-          background: rgba(20, 14, 8, 0.82);
+          background: rgba(10, 8, 6, 0.85);
           display: flex;
           align-items: center;
           justify-content: center;
           opacity: 0;
-          transition: opacity 0.3s ease;
+          transition: opacity 0.3s;
         }
         .perfume-card:hover .aroma-overlay {
           opacity: 1;
@@ -589,196 +618,178 @@ export default function App() {
           padding: 1rem;
         }
         .aroma-label {
-          font-size: 0.6rem;
+          font-size: 0.55rem;
           letter-spacing: 0.22em;
           text-transform: uppercase;
-          color: #b8922a;
+          color: var(--gold);
           font-weight: 700;
           margin-bottom: 0.35rem;
         }
         .aroma-text {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 0.95rem;
-          color: #f5f0e8;
+          font-family: var(--font-serif);
+          font-size: 0.85rem;
+          color: var(--text-primary);
           line-height: 1.4;
-          margin-bottom: 0.8rem;
+          margin-bottom: 0.7rem;
         }
         .aroma-cta {
           display: inline-flex;
           align-items: center;
-          font-size: 0.65rem;
+          gap: 0.3rem;
+          font-size: 0.6rem;
           font-weight: 700;
-          letter-spacing: 0.12em;
+          letter-spacing: 0.1em;
           text-transform: uppercase;
           color: #fff;
           background: #25D366;
-          padding: 0.3rem 0.75rem;
-          border-radius: 2px;
+          padding: 0.35rem 0.8rem;
         }
-
         .perfume-info {
-          padding: 0.75rem 1rem 0.85rem;
+          padding: 0.7rem 0.85rem 0.85rem;
           text-align: center;
-          background: #fff;
         }
         .perfume-meta {
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 0.5rem;
-          margin-bottom: 0.25rem;
+          gap: 0.4rem;
+          margin-bottom: 0.2rem;
           flex-wrap: wrap;
         }
         .perfume-marca {
-          font-size: 0.6rem;
+          font-size: 0.55rem;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          color: #b8922a;
+          color: var(--gold);
           margin-bottom: 0;
           font-weight: 600;
         }
         .genero-badge {
-          font-size: 0.55rem;
+          font-size: 0.5rem;
           font-weight: 700;
-          letter-spacing: 0.1em;
+          letter-spacing: 0.08em;
           text-transform: uppercase;
-          padding: 0.15rem 0.45rem;
+          padding: 0.12rem 0.4rem;
           border-radius: 20px;
           line-height: 1;
         }
-        .badge-hombre {
-          background: #dbeafe;
-          color: #1d4ed8;
-        }
-        .badge-mujer {
-          background: #fce7f3;
-          color: #be185d;
-        }
-        .badge-unisex {
-          background: #f3e8ff;
-          color: #7c3aed;
-        }
+        .badge-hombre { background: rgba(59,130,246,0.15); color: #60a5fa; }
+        .badge-mujer { background: rgba(244,114,182,0.15); color: #f472b6; }
+        .badge-unisex { background: rgba(168,85,247,0.15); color: #a855f7; }
         .perfume-name {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 1rem;
-          color: #1a1a1a;
+          font-family: var(--font-serif);
+          font-size: 0.88rem;
+          color: #fff;
           margin-bottom: 0;
           line-height: 1.3;
         }
 
-        /* COMING SOON */
+        /* ===== COMING SOON ===== */
         .coming-soon {
           text-align: center;
           padding: 3rem 1rem;
-          color: #aaa;
-          border: 1px dashed #ddd;
+          color: var(--text-muted);
+          border: 1px dashed var(--border-dim);
         }
         .coming-soon i {
           font-size: 2rem;
-          color: #ccc;
+          color: var(--text-muted);
           display: block;
           margin-bottom: 0.8rem;
         }
         .coming-soon p {
-          font-size: 0.82rem;
+          font-size: 0.75rem;
           letter-spacing: 0.18em;
           text-transform: uppercase;
           margin: 0;
         }
 
-        /* WHATSAPP FLOATING BAR */
-        .wa-bar {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background: #25D366;
-          color: #fff;
-          text-align: center;
-          padding: 0.85rem 1rem;
-          z-index: 2000;
-          font-family: 'Raleway', sans-serif;
-          font-size: 0.82rem;
-          font-weight: 600;
-          letter-spacing: 0.03em;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.6rem;
-          box-shadow: 0 -3px 20px rgba(37,211,102,0.25);
-          transition: background 0.2s;
-        }
-        .wa-bar:hover {
-          background: #1ebe5a;
-          color: #fff;
-          text-decoration: none;
-        }
-        .wa-bar i {
-          font-size: 1.2rem;
-        }
-
-        /* FOOTER */
+        /* ===== FOOTER ===== */
         .dionisio-footer {
-          background: #f8f6f2;
-          border-top: 1px solid #e8e2d8;
-          padding: 2.5rem 1rem;
+          background: var(--bg-elevated);
+          border-top: 1px solid var(--border-dim);
+          padding: 3rem 1rem 6rem;
           text-align: center;
         }
         .footer-brand {
-          font-family: 'Cormorant Garamond', serif;
-          font-size: 1.6rem;
-          color: #b8922a;
+          font-family: var(--font-serif);
+          font-size: 1.4rem;
+          color: var(--gold);
           font-weight: 600;
           margin-bottom: 0.5rem;
         }
         .footer-tagline {
-          font-size: 0.75rem;
+          font-size: 0.68rem;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: #999;
+          color: var(--text-muted);
+        }
+
+        /* ===== WHATSAPP FLOATING ===== */
+        .wa-float {
+          position: fixed;
+          bottom: 1.2rem;
+          right: 1.2rem;
+          z-index: 2000;
+          width: 56px;
+          height: 56px;
+          background: #25D366;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 1.5rem;
+          text-decoration: none;
+          box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+          transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .wa-float:hover {
+          transform: scale(1.08);
+          box-shadow: 0 6px 28px rgba(37,211,102,0.45);
+          color: #fff;
+        }
+        .wa-float .wa-badge {
+          position: absolute;
+          top: -4px;
+          right: -4px;
+          background: #ff4444;
+          color: #fff;
+          font-size: 0.55rem;
+          font-weight: 700;
+          padding: 0.15rem 0.35rem;
+          border-radius: 20px;
+          line-height: 1;
         }
 
         @media (max-width: 575px) {
-          .perfume-info { padding: 0.6rem 0.75rem 0.75rem; }
-          .perfume-name { font-size: 0.82rem; }
-          .perfume-marca { font-size: 0.55rem; }
-          .genero-badge { font-size: 0.5rem; }
-          .aroma-text { font-size: 0.82rem; }
-          .wa-bar { font-size: 0.75rem; padding: 0.75rem 0.5rem; }
+          .perfume-info { padding: 0.55rem 0.65rem 0.7rem; }
+          .perfume-name { font-size: 0.78rem; }
+          .perfume-marca { font-size: 0.5rem; }
+          .genero-badge { font-size: 0.45rem; }
+          .aroma-text { font-size: 0.75rem; }
         }
       `}</style>
 
+      {/* SHIPPING BAR */}
+      <div className="top-shipping-bar">
+        <i className="bi bi-truck me-1"></i> Envío GRATIS e inmediato en Avellaneda y La Boca <span>🚚</span>
+      </div>
+
       {/* NAVBAR */}
-      <nav className="navbar navbar-expand-md dionisio-navbar">
-        <div className="container">
-          <a className="navbar-brand navbar-brand-text" href="#">
-            Dionisio Perfumería
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
+      <nav className="dionisio-navbar">
+        <div className="navbar-inner">
+          <a className="navbar-brand-text" href="#">Dionisio Perfumería</a>
+          <button className="navbar-toggler" id="navToggle" aria-label="Menú">
+            <i className="bi bi-list"></i>
           </button>
-          <div className="collapse navbar-collapse" id="mainNavbar">
-            <ul className="navbar-nav ms-auto gap-md-1">
-              <li className="nav-item">
-                <a className="nav-link-custom nav-scroll-link" href="#arabes">Perfumes Árabes</a>
+          <ul className="navbar-nav" id="mainNav">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a className="nav-link-custom nav-scroll-link" href={item.href}>{item.label}</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link-custom nav-scroll-link" href="#aaa">Perfumes AAA</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link-custom nav-scroll-link" href="#body-splash">Body Splash</a>
-              </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         </div>
       </nav>
 
@@ -787,15 +798,14 @@ export default function App() {
         <div className="hero-bg"></div>
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <div className="hero-badge">Fragancias Exclusivas</div>
-          <p className="hero-welcome">Bienvenido a</p>
+          <div className="hero-badge">Alta Perfumería</div>
           <h1 className="hero-title">
-            Dionisio<br /><span>Perfumería</span>
+            Tu próxima firma<br /><span>personal está acá</span>
           </h1>
-          <p className="hero-subtitle">El arte del buen olfato</p>
-          <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="hero-cta">
-            <i className="bi bi-whatsapp"></i>
-            Consultar por WhatsApp
+          <p className="hero-subtitle">Fragancias árabes originales · Lattafa · Armaf · Afnan</p>
+          <a href="#destacados" className="hero-cta nav-scroll-link">
+            <i className="bi bi-box"></i>
+            Ver Catálogo de Invierno
           </a>
         </div>
         <div className="hero-scroll-hint">
@@ -804,37 +814,46 @@ export default function App() {
         </div>
       </header>
 
-      {/* BANNER DÍA DEL PADRE */}
-      <section className="dia-del-padre-banner">
-        <div className="container text-center">
-          <div className="banner-content">
-            <div className="banner-icon"><i className="bi bi-gift-fill"></i></div>
-            <p className="banner-tag">Promoción Especial</p>
-            <h2 className="banner-title">¡Feliz Día del Padre!</h2>
-            <p className="banner-desc">
-              Todos los <strong>Perfumes Árabes</strong> a un solo precio
-            </p>
-            <div className="banner-precio">$65,000</div>
-            <p className="banner-sub">La mejor calidad al mejor precio</p>
-            <a href="#arabes" className="banner-cta nav-scroll-link">Ver colección <i className="bi bi-arrow-down-short"></i></a>
-          </div>
+      {/* DESTACADOS */}
+      <section id="destacados" className="perfume-section">
+        <div className="section-header">
+          <div className="section-divider"></div>
+          <p className="section-tag">Los favoritos</p>
+          <h2 className="section-title">Más Buscados</h2>
+          <p className="section-desc">
+            Los pesos pesados que todos quieren. Khamrah, Asad, Club de Nuit y más.
+          </p>
+        </div>
+        <div className="destacados-grid">
+          {destacados.map((p, i) => (
+            <a key={i} href={waLink(p.name)} target="_blank" rel="noopener noreferrer" className="destacado-card">
+              <div className="destacado-img-wrap">
+                <img src={p.img} alt={p.name} loading="lazy" />
+              </div>
+              <div className="destacado-info">
+                <p className="destacado-marca">{p.marca}</p>
+                <p className="destacado-name">{p.name}</p>
+                <span className="destacado-wa"><i className="bi bi-whatsapp"></i> Consultar</span>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
 
       {/* PERFUMES ÁRABES */}
       <section id="arabes" className="perfume-section">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="section-header">
             <div className="section-divider"></div>
             <p className="section-tag">Oriente en tu piel</p>
             <h2 className="section-title">Perfumes Árabes</h2>
             <p className="section-desc">
-              Fragancias orientales de casas árabes reconocidas mundialmente. Oud, especias y maderas nobles.
+              Fragancias orientales de casas árabes reconocidas. Oud, especias y maderas nobles.
             </p>
           </div>
           <div className="row g-3">
             {arabes.map((p, i) => (
-              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} precio={p.precio} />
+              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} />
             ))}
           </div>
         </div>
@@ -843,12 +862,12 @@ export default function App() {
       {/* PERFUMES AAA */}
       <section id="aaa" className="perfume-section">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="section-header">
             <div className="section-divider"></div>
             <p className="section-tag">Calidad Premium</p>
             <h2 className="section-title">Perfumes AAA</h2>
             <p className="section-desc">
-              Perfumes de alta gama, inspirados en las mejores fragancias del mundo a precios accesibles.
+              Inspirados en las mejores fragancias del mundo, a precios accesibles.
             </p>
           </div>
           {aaa.length > 0 ? (
@@ -869,12 +888,12 @@ export default function App() {
       {/* BODY SPLASH */}
       <section id="body-splash" className="perfume-section">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="section-header">
             <div className="section-divider"></div>
             <p className="section-tag">Frescura todo el día</p>
             <h2 className="section-title">Body Splash</h2>
             <p className="section-desc">
-              Splashes corporales vibrantes y frescos, ideales para el día a día. Ligeros, duraderos y únicos.
+              Splashes corporales vibrantes y frescos, ideales para el día a día.
             </p>
           </div>
           {bodySplash.length > 0 ? (
@@ -898,11 +917,21 @@ export default function App() {
         <p className="footer-tagline">Buenos Aires, Argentina</p>
       </footer>
 
-      {/* WHATSAPP FLOATING BAR */}
-      <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="wa-bar">
+      {/* WHATSAPP FLOATING */}
+      <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="wa-float">
         <i className="bi bi-whatsapp"></i>
-        ¡Cualquier perfume que no veas, consultá acá!
       </a>
+
+      {/* NAV TOGGLE SCRIPT */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            document.getElementById('navToggle')?.addEventListener('click', function() {
+              document.getElementById('mainNav')?.classList.toggle('open');
+            });
+          `
+        }}
+      />
     </>
   );
 }
