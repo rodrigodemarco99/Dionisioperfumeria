@@ -78,6 +78,23 @@ import vulcannegro from "@assets/PERFUME VULCAN NEGRO 100ML.png";
 import whipped from "@assets/PERFUME WHIPPED PLEASURE 75ML.png";
 import white from "@assets/PERFUME WHITE EDITION 100ML.png";
 import wildone from "@assets/PERFUME WILD ONE 100ML.png";
+import erbaSoprano from "@assets/PERFUME ERBA PURA 100ML soprano.png";
+import erbaAcento from "@assets/PERFUME ERBA PURA acento overdose 100ML.png";
+import erbaOpera from "@assets/PERFUME ERBA PURA opera.png";
+import erbaCoro from "@assets/PERFUME ERBA PURA coro.png";
+import erbaNueva from "@assets/PERFUME ERBA PURA Nueva edición.png";
+import historicOlmeda from "@assets/PERFUME HISTORIC OLMEDA 100ML.png";
+import bhararaRose from "@assets/PERFUME BHARARA ROSE 100ML.png";
+import bhararaChocolate from "@assets/PERFUME BHARARA KING CHOCOLATE 100ML.png";
+import bhararaGold from "@assets/PERFUME BHARARA KING GOLD EDITION 100ML.png";
+import akHaramain from "@assets/PERFUME AK HARAMAIN AMBER OUD 60ML.png";
+import alHaramain from "@assets/PERFUME AL HARAMAIN AMBER OUD 60ML.png";
+import haramainGold from "@assets/PERFUME HARAMAIN AMBER OUD GOLD EDITION 60ML.png";
+import bhararaBleu from "@assets/BHARARA KING BLEU 100ML.png";
+import theKingdom from "@assets/PERFUME THE KINGDOM 100ML.png";
+import artOfUniverse from "@assets/PERFUME ART OF UNIVERSE 100ML.png";
+import azzaroWanted from "@assets/PERFUME AZZARO THE MOST WANTED 100ML.png";
+import asadElixirNegro from "@assets/PERFUME ASAD ELIXIR NEGRO 100ML.png";
 
 import bs01 from "@assets/imgvs1_1776041960423.jpg";
 import bs02 from "@assets/imgvs2_1776041960424.jpg";
@@ -98,12 +115,12 @@ const arabes = [
   { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa", genero: "Unisex", aroma: "Oud, floral, almizclado", precio: 55000 },
   { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, oud, almizclado", precio: 55000 },
   { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: 55000 },
-  { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar", precio: 37500 },
+  { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar", precio: 45000 },
   { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado", precio: 60000 },
   { img: img08, name: "Club de Nuit Woman", marca: "Armaf", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: 55000 },
   { img: img09, name: "Club de Nuit Untold", marca: "Armaf", genero: "Unisex", aroma: "Floral, amaderado, almizclado", precio: 55000 },
-  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado", precio: 40500 },
-  { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado", precio: 39000 },
+  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado", precio: 60000 },
+  { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado", precio: 60000 },
   { img: img12, name: "Odyssey Tyrant", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, cuero", precio: 55000 },
   { img: img13, name: "Odyssey Limoni", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, fresco, verde", precio: 55000 },
   { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado", precio: 55000 },
@@ -150,6 +167,23 @@ const arabes = [
   { img: wildone, name: "Wild One", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, cuero, almizclado", precio: 50000 },
   { img: odysseyagua, name: "Odyssey Agua", marca: "Armaf", genero: "Hombre", aroma: "Acuático, cítrico, fresco", precio: 50000 },
   { img: choco, name: "Choco Overdose", marca: "Lattafa", genero: "Mujer", aroma: "Chocolate, dulce, gourmand", precio: 65000 },
+  { img: erbaSoprano, name: "Erba Pura Soprano", marca: "Lattafa", genero: "Unisex", aroma: "Frutal, dulce, almizclado", precio: 60000 },
+  { img: erbaAcento, name: "Erba Pura Acento Overdose", marca: "Lattafa", genero: "Unisex", aroma: "Dulce, frutal, almizclado", precio: 60000 },
+  { img: erbaOpera, name: "Erba Pura Opera", marca: "Lattafa", genero: "Unisex", aroma: "Frutal, floral, vainilla", precio: 60000 },
+  { img: erbaCoro, name: "Erba Pura Coro", marca: "Lattafa", genero: "Unisex", aroma: "Cítrico, frutal, almizclado", precio: 60000 },
+  { img: erbaNueva, name: "Erba Pura Nueva Edición", marca: "Lattafa", genero: "Unisex", aroma: "Afrutado, dulce, premium", precio: 65000 },
+  { img: historicOlmeda, name: "Historic Olmeda", marca: "Al Haramain", genero: "Hombre", aroma: "Amaderado, especiado, ámbar", precio: 70000 },
+  { img: bhararaRose, name: "Bharara Rose", marca: "Bharara", genero: "Mujer", aroma: "Rosa, floral, almizclado", precio: 70000 },
+  { img: bhararaChocolate, name: "Bharara King Chocolate", marca: "Bharara", genero: "Unisex", aroma: "Cacao, dulce, gourmand", precio: 70000 },
+  { img: bhararaGold, name: "Bharara King Gold Edition", marca: "Bharara", genero: "Hombre", aroma: "Amaderado, ámbar, especiado", precio: 70000 },
+  { img: akHaramain, name: "AK Haramain Amber Oud", marca: "Al Haramain", genero: "Unisex", aroma: "Ámbar, oud, almizclado", precio: 70000 },
+  { img: alHaramain, name: "Al Haramain Amber Oud", marca: "Al Haramain", genero: "Unisex", aroma: "Ámbar, oud, especiado", precio: 70000 },
+  { img: haramainGold, name: "Haramain Amber Oud Gold Edition", marca: "Al Haramain", genero: "Unisex", aroma: "Ámbar, oud, dorado", precio: 70000 },
+  { img: bhararaBleu, name: "Bharara King Bleu", marca: "Bharara", genero: "Hombre", aroma: "Acuático, amaderado, almizclado", precio: 70000 },
+  { img: theKingdom, name: "The Kingdom", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, cuero, especiado", precio: 70000 },
+  { img: artOfUniverse, name: "Art of Universe", marca: "Lattafa", genero: "Unisex", aroma: "Cítrico, floral, almizclado", precio: 70000 },
+  { img: azzaroWanted, name: "Azzaro The Most Wanted", marca: "Azzaro", genero: "Hombre", aroma: "Amaderado, ámbar, especiado", precio: 60000 },
+  { img: asadElixirNegro, name: "Asad Elixir Negro", marca: "Lattafa", genero: "Hombre", aroma: "Negro, amaderado, especiado", precio: 60000 },
 ];
 
 const aaa = [
