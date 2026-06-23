@@ -52,6 +52,33 @@ import aaa08 from "@assets/image_1776289755913.png";
 import aaa09 from "@assets/image_1776289823193.png";
 import aaa10 from "@assets/image_1776289843232.png";
 
+import afeeff from "@assets/PERFUME AFEEF 100ML.png";
+import alfaris from "@assets/PERFUME AL FARIS 100ML.png";
+import am9 from "@assets/PERFUME AM9 100ML.png";
+import musamam from "@assets/PERFUME ARABE MUSAMAM 100ML.png";
+import qaaed from "@assets/PERFUME ARABE QAAED 100ML.png";
+import candee from "@assets/PERFUME CANDEE 100ML.png";
+import choco from "@assets/PERFUME CHOCO OVERDOSE 75ML.png";
+import cookie from "@assets/PERFUME COOKIE CRAVE 75ML.png";
+import gisela from "@assets/PERFUME GISELA 200ML.png";
+import giselarosa from "@assets/PERFUME GISELA ROSA 200ML.png";
+import hasik from "@assets/PERFUME HASIK 100ML.png";
+import hawasfire from "@assets/PERFUME HAWAS FIRE 100ML.png";
+import hawasice from "@assets/PERFUME HAWAS ICE 100ML.png";
+import hawasmalibu from "@assets/PERFUME HAWAS MALIBU 100ML.png";
+import hayarosa from "@assets/PERFUME HAYA ROSA 100ML.png";
+import mallow from "@assets/PERFUME MALLOW MADNESS 75ML.png";
+import marshmallow from "@assets/PERFUME MARSHMALLOW BLUSH 100ML.png";
+import odysseyagua from "@assets/PERFUME ODYSSEY AGUA 100ML.png";
+import rayhaan from "@assets/PERFUME RAYHAAN 100ML.png";
+import supremacy from "@assets/PERFUME SUPREMACY 100ML.png";
+import vanilla from "@assets/PERFUME VANILLA FREAK 75ML.png";
+import vulcan from "@assets/PERFUME VULCAN 100ML.png";
+import vulcannegro from "@assets/PERFUME VULCAN NEGRO 100ML.png";
+import whipped from "@assets/PERFUME WHIPPED PLEASURE 75ML.png";
+import white from "@assets/PERFUME WHITE EDITION 100ML.png";
+import wildone from "@assets/PERFUME WILD ONE 100ML.png";
+
 import bs01 from "@assets/imgvs1_1776041960423.jpg";
 import bs02 from "@assets/imgvs2_1776041960424.jpg";
 import bs03 from "@assets/imgvs3_1776041960425.jpg";
@@ -71,12 +98,12 @@ const arabes = [
   { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa", genero: "Unisex", aroma: "Oud, floral, almizclado" },
   { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, oud, almizclado" },
   { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
-  { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar" },
+  { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar", precio: 37500 },
   { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado" },
   { img: img08, name: "Club de Nuit Woman", marca: "Armaf", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
   { img: img09, name: "Club de Nuit Untold", marca: "Armaf", genero: "Unisex", aroma: "Floral, amaderado, almizclado" },
-  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado" },
-  { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado" },
+  { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado", precio: 40500 },
+  { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado", precio: 39000 },
   { img: img12, name: "Odyssey Tyrant", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, cuero" },
   { img: img13, name: "Odyssey Limoni", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, fresco, verde" },
   { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado" },
@@ -93,17 +120,36 @@ const arabes = [
   { img: img25, name: "Club de Nuit Urban Man Elixir", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cuero, especiado" },
   { img: img26, name: "Club de Nuit Impériale", marca: "Armaf", genero: "Mujer", aroma: "Floral, almizclado, vainilla" },
   { img: img27, name: "Give Me Gourmand Berry on Top", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, dulce, fresa" },
-  { img: img28, name: "Give Me Gourmand Cookie Crave", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, vainilla" },
+  { img: img28, name: "Give Me Gourmand Cookie Crave", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, vainilla", precio: 46500 },
   { img: img29, name: "Odyssey Homme", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, almizclado" },
   { img: img30, name: "Yara Rosa", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
   { img: img31, name: "Asad", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, especiado" },
-  { img: img32, name: "9am Dive", marca: "Afnan", genero: "Unisex", aroma: "Acuático, cítrico, amaderado" },
-  { img: img33, name: "Give Me Gourmand Mallow Madness", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, almizclado" },
-  { img: img34, name: "Give Me Gourmand Whipped Pleasure", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, caramelo, almizclado" },
-  { img: img35, name: "Give Me Gourmand Vanilla Freak", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, chocolate, dulce" },
+  { img: img32, name: "9am Dive", marca: "Afnan", genero: "Unisex", aroma: "Acuático, cítrico, amaderado", precio: 36000 },
+  { img: img33, name: "Give Me Gourmand Mallow Madness", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, almizclado", precio: 46500 },
+  { img: img34, name: "Give Me Gourmand Whipped Pleasure", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, caramelo, almizclado", precio: 46500 },
+  { img: img35, name: "Give Me Gourmand Vanilla Freak", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, chocolate, dulce", precio: 46500 },
   { img: img36, name: "Yara Fucsia", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
-  { img: img37, name: "Khamrah Qahwa", marca: "Lattafa", genero: "Unisex", aroma: "Café, oud, especiado" },
-  { img: img38, name: "Qaed Al Fursan", marca: "Lattafa", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado" },
+  { img: img37, name: "Khamrah Qahwa", marca: "Lattafa", genero: "Unisex", aroma: "Café, oud, especiado", precio: 46500 },
+  { img: img38, name: "Qaed Al Fursan", marca: "Lattafa", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado", precio: 34500 },
+  { img: gisela, name: "Gisela 200ML", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, vainilla, almizclado", precio: 40500 },
+  { img: giselarosa, name: "Gisela Rosa 200ML", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, floral, almizclado", precio: 40500 },
+  { img: afeeff, name: "Afeef", marca: "Lattafa", genero: "Unisex", aroma: "Frutal, floral, dulce", precio: 68250 },
+  { img: vulcan, name: "Vulcan Feu", marca: "French Avenue", genero: "Hombre", aroma: "Mango, frutal, amaderado", precio: 32250 },
+  { img: vulcannegro, name: "Vulcan Negro", marca: "French Avenue", genero: "Hombre", aroma: "Oscuro, amaderado, especiado", precio: 32250 },
+  { img: supremacy, name: "Supremacy", marca: "Afnan", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado", precio: 33000 },
+  { img: hasik, name: "Hasik", marca: "Lattafa", genero: "Unisex", aroma: "Oud, especiado, amaderado", precio: 42000 },
+  { img: rayhaan, name: "Rayhaan", marca: "Rayhaan", genero: "Unisex", aroma: "Amaderado, floral, almizclado", precio: 31500 },
+  { img: musamam, name: "Musamam", marca: "Lattafa", genero: "Unisex", aroma: "Oud, ámbar, especiado", precio: 46500 },
+  { img: marshmallow, name: "Marshmallow Blush", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, vainilla, malvavisco", precio: 33000 },
+  { img: hayarosa, name: "Haya Rosa", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, dulce, almizclado", precio: 39750 },
+  { img: hawasfire, name: "Hawas Fire", marca: "Rasasi", genero: "Hombre", aroma: "Cítrico, especiado, amaderado", precio: 39000 },
+  { img: hawasice, name: "Hawas Ice", marca: "Rasasi", genero: "Hombre", aroma: "Mentolado, acuático, fresco", precio: 28500 },
+  { img: hawasmalibu, name: "Hawas Malibu", marca: "Rasasi", genero: "Hombre", aroma: "Coco, acuático, fresco", precio: 39000 },
+  { img: white, name: "White Edition", marca: "Lattafa", genero: "Unisex", aroma: "Cítrico, floral, almizclado", precio: 39000 },
+  { img: alfaris, name: "Al Faris", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, especiado, almizclado", precio: 30000 },
+  { img: wildone, name: "Wild One", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, cuero, almizclado", precio: 39000 },
+  { img: odysseyagua, name: "Odyssey Agua", marca: "Armaf", genero: "Hombre", aroma: "Acuático, cítrico, fresco", precio: 39000 },
+  { img: choco, name: "Choco Overdose", marca: "Lattafa", genero: "Mujer", aroma: "Chocolate, dulce, gourmand", precio: 46500 },
 ];
 
 const aaa = [
@@ -133,7 +179,9 @@ const bodySplash = [
 
 const destacados = [arabes[6], arabes[30], arabes[36], arabes[0], arabes[7], arabes[10]];
 
-function PerfumeCard({ img, name, marca, genero, aroma }: { img: string; name: string; marca: string; genero: string; aroma: string }) {
+const formatPrecio = (n: number) => "$" + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string; name: string; marca: string; genero: string; aroma: string; precio?: number }) {
   const generoClass = genero === "Hombre" ? "badge-hombre" : genero === "Mujer" ? "badge-mujer" : "badge-unisex";
   return (
     <div className="col-6 col-md-4 col-lg-3 mb-4">
@@ -155,6 +203,7 @@ function PerfumeCard({ img, name, marca, genero, aroma }: { img: string; name: s
               <span className={`genero-badge ${generoClass}`}>{genero}</span>
             </div>
             <p className="perfume-name">{name}</p>
+            {precio && <div className="precio-badge">{formatPrecio(precio)}</div>}
           </div>
         </div>
       </a>
@@ -682,6 +731,14 @@ export default function App() {
           color: #fff;
           margin-bottom: 0;
           line-height: 1.3;
+        }
+        .precio-badge {
+          font-family: var(--font-sans);
+          font-size: 1.05rem;
+          font-weight: 700;
+          color: var(--gold);
+          margin-top: 0.35rem;
+          letter-spacing: 0.5px;
         }
 
         /* ===== COMING SOON ===== */
