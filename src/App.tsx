@@ -93,42 +93,42 @@ const waLink = (name: string) =>
   "https://wa.me/5491132393925?text=" + encodeURIComponent("Hola! Me interesa el perfume: " + name);
 
 const arabes = [
-  { img: img01, name: "Badee Al Oud Honor & Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, almizclado" },
-  { img: img02, name: "Badee Al Oud Oud for Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, especiado" },
-  { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa", genero: "Unisex", aroma: "Oud, floral, almizclado" },
-  { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, oud, almizclado" },
-  { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img01, name: "Badee Al Oud Honor & Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, almizclado", precio: 55000 },
+  { img: img02, name: "Badee Al Oud Oud for Glory", marca: "Lattafa", genero: "Unisex", aroma: "Oud, amaderado, especiado", precio: 55000 },
+  { img: img03, name: "Badee Al Oud Sublime", marca: "Lattafa", genero: "Unisex", aroma: "Oud, floral, almizclado", precio: 55000 },
+  { img: img04, name: "Badee Al Oud Rose", marca: "Lattafa", genero: "Mujer", aroma: "Rosa, oud, almizclado", precio: 55000 },
+  { img: img05, name: "Badee Al Oud Amethyst", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: 55000 },
   { img: img06, name: "9pm Night Out", marca: "Afnan", genero: "Hombre", aroma: "Amaderado, especiado, ámbar", precio: 37500 },
-  { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado" },
-  { img: img08, name: "Club de Nuit Woman", marca: "Armaf", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
-  { img: img09, name: "Club de Nuit Untold", marca: "Armaf", genero: "Unisex", aroma: "Floral, amaderado, almizclado" },
+  { img: img07, name: "Club de Nuit Intense Man", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado", precio: 60000 },
+  { img: img08, name: "Club de Nuit Woman", marca: "Armaf", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: 55000 },
+  { img: img09, name: "Club de Nuit Untold", marca: "Armaf", genero: "Unisex", aroma: "Floral, amaderado, almizclado", precio: 55000 },
   { img: img10, name: "Odyssey Mandarin Sky", marca: "Armaf", genero: "Hombre", aroma: "Cítrico, acuático, amaderado", precio: 40500 },
   { img: img11, name: "Odyssey Candee", marca: "Armaf", genero: "Mujer", aroma: "Frutal, dulce, almizclado", precio: 39000 },
-  { img: img12, name: "Odyssey Tyrant", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, cuero" },
-  { img: img13, name: "Odyssey Limoni", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, fresco, verde" },
-  { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado" },
-  { img: img15, name: "His Confession Black", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, almizclado" },
-  { img: img16, name: "Her Confession", marca: "Lattafa", genero: "Mujer", aroma: "Floral, vainilla, almizclado" },
-  { img: img17, name: "Maahir Black Edition", marca: "Lattafa", genero: "Hombre", aroma: "Cuero, amaderado, especiado" },
-  { img: img18, name: "Asad Zanzibar", marca: "Lattafa", genero: "Hombre", aroma: "Acuático, amaderado, almizclado" },
-  { img: img19, name: "Asad Elixir", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado" },
-  { img: img20, name: "Yara Amarillo", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, floral, almizclado" },
-  { img: img21, name: "Erba Pura", marca: "Xerjoff", genero: "Unisex", aroma: "Cítrico, floral, almizclado" },
-  { img: img22, name: "Viking Beirut", marca: "Bharara", genero: "Hombre", aroma: "Especiado, amaderado, ámbar" },
-  { img: img23, name: "Al Noble Safeer", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, almizclado" },
-  { img: img24, name: "Odyssey Mega", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cítrico, ámbar" },
-  { img: img25, name: "Club de Nuit Urban Man Elixir", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cuero, especiado" },
-  { img: img26, name: "Club de Nuit Impériale", marca: "Armaf", genero: "Mujer", aroma: "Floral, almizclado, vainilla" },
-  { img: img27, name: "Give Me Gourmand Berry on Top", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, dulce, fresa" },
+  { img: img12, name: "Odyssey Tyrant", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, cuero", precio: 55000 },
+  { img: img13, name: "Odyssey Limoni", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, fresco, verde", precio: 55000 },
+  { img: img14, name: "Ishq Al Shuyukh Silver", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado", precio: 55000 },
+  { img: img15, name: "His Confession Black", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, almizclado", precio: 55000 },
+  { img: img16, name: "Her Confession", marca: "Lattafa", genero: "Mujer", aroma: "Floral, vainilla, almizclado", precio: 55000 },
+  { img: img17, name: "Maahir Black Edition", marca: "Lattafa", genero: "Hombre", aroma: "Cuero, amaderado, especiado", precio: 55000 },
+  { img: img18, name: "Asad Zanzibar", marca: "Lattafa", genero: "Hombre", aroma: "Acuático, amaderado, almizclado", precio: 57000 },
+  { img: img19, name: "Asad Elixir", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, ámbar, especiado", precio: 57000 },
+  { img: img20, name: "Yara Amarillo", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, floral, almizclado", precio: 57000 },
+  { img: img21, name: "Erba Pura", marca: "Xerjoff", genero: "Unisex", aroma: "Cítrico, floral, almizclado", precio: 60000 },
+  { img: img22, name: "Viking Beirut", marca: "Bharara", genero: "Hombre", aroma: "Especiado, amaderado, ámbar", precio: 57000 },
+  { img: img23, name: "Al Noble Safeer", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, almizclado", precio: 55000 },
+  { img: img24, name: "Odyssey Mega", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cítrico, ámbar", precio: 55000 },
+  { img: img25, name: "Club de Nuit Urban Man Elixir", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, cuero, especiado", precio: 60000 },
+  { img: img26, name: "Club de Nuit Impériale", marca: "Armaf", genero: "Mujer", aroma: "Floral, almizclado, vainilla", precio: 55000 },
+  { img: img27, name: "Give Me Gourmand Berry on Top", marca: "Lattafa", genero: "Mujer", aroma: "Frutal, dulce, fresa", precio: 55000 },
   { img: img28, name: "Give Me Gourmand Cookie Crave", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, vainilla", precio: 46500 },
-  { img: img29, name: "Odyssey Homme", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, almizclado" },
-  { img: img30, name: "Yara Rosa", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
-  { img: img31, name: "Asad", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, especiado" },
+  { img: img29, name: "Odyssey Homme", marca: "Armaf", genero: "Hombre", aroma: "Amaderado, especiado, almizclado", precio: 55000 },
+  { img: img30, name: "Yara Rosa", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: 57000 },
+  { img: img31, name: "Asad", marca: "Lattafa", genero: "Hombre", aroma: "Amaderado, oud, especiado", precio: 57000 },
   { img: img32, name: "9am Dive", marca: "Afnan", genero: "Unisex", aroma: "Acuático, cítrico, amaderado", precio: 36000 },
   { img: img33, name: "Give Me Gourmand Mallow Madness", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, gourmand, almizclado", precio: 46500 },
   { img: img34, name: "Give Me Gourmand Whipped Pleasure", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, caramelo, almizclado", precio: 46500 },
   { img: img35, name: "Give Me Gourmand Vanilla Freak", marca: "Lattafa", genero: "Mujer", aroma: "Vainilla, chocolate, dulce", precio: 46500 },
-  { img: img36, name: "Yara Fucsia", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado" },
+  { img: img36, name: "Yara Fucsia", marca: "Lattafa", genero: "Mujer", aroma: "Floral, frutal, almizclado", precio: 57000 },
   { img: img37, name: "Khamrah Qahwa", marca: "Lattafa", genero: "Unisex", aroma: "Café, oud, especiado", precio: 46500 },
   { img: img38, name: "Qaed Al Fursan", marca: "Lattafa", genero: "Hombre", aroma: "Cítrico, amaderado, almizclado", precio: 34500 },
   { img: gisela, name: "Gisela 200ML", marca: "Lattafa", genero: "Mujer", aroma: "Dulce, vainilla, almizclado", precio: 40500 },
@@ -153,28 +153,28 @@ const arabes = [
 ];
 
 const aaa = [
-  { img: aaa01, name: "Le Male Le Parfum", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Lavanda, vainilla, cuero, almizclado" },
-  { img: aaa02, name: "Invictus Legend", marca: "Paco Rabanne", genero: "Hombre", aroma: "Acuático, amaderado, almizclado" },
-  { img: aaa03, name: "Invictus Onyx", marca: "Paco Rabanne", genero: "Hombre", aroma: "Especiado, amaderado, cuero" },
-  { img: aaa04, name: "Invictus EDT", marca: "Paco Rabanne", genero: "Hombre", aroma: "Acuático, ambar, almizclado" },
-  { img: aaa05, name: "212 VIP Men", marca: "Carolina Herrera", genero: "Hombre", aroma: "Amaderado, almizclado, ámbar" },
-  { img: aaa06, name: "Scandal Pour Homme EDT Azul", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Bergamota, ámbar, almizclado" },
-  { img: aaa07, name: "Scandal Pour Homme EDT", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Bergamota, cuero, almizclado" },
-  { img: aaa08, name: "Scandal Le Parfum", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Cuero, ámbar, almizclado" },
-  { img: aaa09, name: "Phantom EDT", marca: "Paco Rabanne", genero: "Hombre", aroma: "Vainilla, lavanda, amaderado" },
-  { img: aaa10, name: "Bad Boy EDT", marca: "Carolina Herrera", genero: "Hombre", aroma: "Cuero, cacao, amaderado" },
+  { img: aaa01, name: "Le Male Le Parfum", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Lavanda, vainilla, cuero, almizclado", precio: 30000 },
+  { img: aaa02, name: "Invictus Legend", marca: "Paco Rabanne", genero: "Hombre", aroma: "Acuático, amaderado, almizclado", precio: 30000 },
+  { img: aaa03, name: "Invictus Onyx", marca: "Paco Rabanne", genero: "Hombre", aroma: "Especiado, amaderado, cuero", precio: 30000 },
+  { img: aaa04, name: "Invictus EDT", marca: "Paco Rabanne", genero: "Hombre", aroma: "Acuático, ambar, almizclado", precio: 30000 },
+  { img: aaa05, name: "212 VIP Men", marca: "Carolina Herrera", genero: "Hombre", aroma: "Amaderado, almizclado, ámbar", precio: 30000 },
+  { img: aaa06, name: "Scandal Pour Homme EDT Azul", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Bergamota, ámbar, almizclado", precio: 30000 },
+  { img: aaa07, name: "Scandal Pour Homme EDT", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Bergamota, cuero, almizclado", precio: 30000 },
+  { img: aaa08, name: "Scandal Le Parfum", marca: "Jean Paul Gaultier", genero: "Hombre", aroma: "Cuero, ámbar, almizclado", precio: 30000 },
+  { img: aaa09, name: "Phantom EDT", marca: "Paco Rabanne", genero: "Hombre", aroma: "Vainilla, lavanda, amaderado", precio: 30000 },
+  { img: aaa10, name: "Bad Boy EDT", marca: "Carolina Herrera", genero: "Hombre", aroma: "Cuero, cacao, amaderado", precio: 30000 },
 ];
 
 const bodySplash = [
-  { img: bs01, name: "Midnight Fantasy", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado" },
-  { img: bs02, name: "Temptation", marca: "Victoria's Secret", genero: "Mujer", aroma: "Oriental, vainilla, almizclado" },
-  { img: bs03, name: "Aqua Kiss", marca: "Victoria's Secret", genero: "Mujer", aroma: "Floral, acuático, fresco" },
-  { img: bs04, name: "Sugar High Shimmer", marca: "Victoria's Secret", genero: "Mujer", aroma: "Dulce, frutal, almizclado" },
-  { img: bs05, name: "Love Spell", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado" },
-  { img: bs06, name: "Coconut Musk", marca: "Al Wataniah", genero: "Mujer", aroma: "Coco, almizclado, dulce" },
-  { img: bs07, name: "Odyssey Mandarin Sky Body Spray", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, acuático, fresco" },
-  { img: bs08, name: "Ameer Al Arab", marca: "Lattafa", genero: "Unisex", aroma: "Acuático, amaderado, almizclado" },
-  { img: bs09, name: "Khamrah", marca: "Lattafa", genero: "Unisex", aroma: "Oud, especiado, amaderado" },
+  { img: bs01, name: "Midnight Fantasy", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado", precio: 25000 },
+  { img: bs02, name: "Temptation", marca: "Victoria's Secret", genero: "Mujer", aroma: "Oriental, vainilla, almizclado", precio: 25000 },
+  { img: bs03, name: "Aqua Kiss", marca: "Victoria's Secret", genero: "Mujer", aroma: "Floral, acuático, fresco", precio: 25000 },
+  { img: bs04, name: "Sugar High Shimmer", marca: "Victoria's Secret", genero: "Mujer", aroma: "Dulce, frutal, almizclado", precio: 25000 },
+  { img: bs05, name: "Love Spell", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado", precio: 25000 },
+  { img: bs06, name: "Coconut Musk", marca: "Al Wataniah", genero: "Mujer", aroma: "Coco, almizclado, dulce", precio: 25000 },
+  { img: bs07, name: "Odyssey Mandarin Sky Body Spray", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, acuático, fresco", precio: 25000 },
+  { img: bs08, name: "Ameer Al Arab", marca: "Lattafa", genero: "Unisex", aroma: "Acuático, amaderado, almizclado", precio: 25000 },
+  { img: bs09, name: "Khamrah", marca: "Lattafa", genero: "Unisex", aroma: "Oud, especiado, amaderado", precio: 25000 },
 ];
 
 const destacados = [arabes[6], arabes[30], arabes[36], arabes[0], arabes[7], arabes[10]];
@@ -910,7 +910,7 @@ export default function App() {
           </div>
           <div className="row g-3">
             {arabes.map((p, i) => (
-              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} />
+              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} precio={p.precio} />
             ))}
           </div>
         </div>
@@ -930,7 +930,7 @@ export default function App() {
           {aaa.length > 0 ? (
             <div className="row g-3 justify-content-center">
               {aaa.map((p, i) => (
-                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} />
+                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} precio={p.precio} />
               ))}
             </div>
           ) : (
@@ -956,7 +956,7 @@ export default function App() {
           {bodySplash.length > 0 ? (
             <div className="row g-3">
               {bodySplash.map((p, i) => (
-                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} />
+                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} precio={p.precio} />
               ))}
             </div>
           ) : (
