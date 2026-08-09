@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import heroImg from "@assets/Gemini_Generated_Image_66h5hk66h5hk66h5_(1)_1776041591795.png";
 
@@ -95,6 +95,8 @@ import theKingdom from "@assets/PERFUME THE KINGDOM 100ML.png";
 import artOfUniverse from "@assets/PERFUME ART OF UNIVERSE 100ML.png";
 import azzaroWanted from "@assets/PERFUME AZZARO THE MOST WANTED 100ML.png";
 import asadElixirNegro from "@assets/PERFUME ASAD ELIXIR NEGRO 100ML.png";
+import mielHombre from "@assets/miel hombre.png";
+import mielMujer from "@assets/miel mujer.png";
 
 import bs01 from "@assets/imgvs1_1776041960423.jpg";
 import bs02 from "@assets/imgvs2_1776041960424.jpg";
@@ -107,7 +109,7 @@ import bs08 from "@assets/Captura_de_pantalla_2026-04-12_221846_1776043185594.pn
 import bs09 from "@assets/Captura_de_pantalla_2026-04-12_221808_1776043185595.png";
 
 const waLink = (name: string) =>
-  "https://wa.me/5491132393925?text=" + encodeURIComponent("Hola! Me interesa el perfume: " + name);
+  "https://wa.me/5491131430876?text=" + encodeURIComponent("Hola! Me interesa el perfume: " + name);
 
 const arabes = [
   { img: hawasice, name: "Hawas Ice", marca: "Rasasi", genero: "Hombre", aroma: "Mentolado, acuático, fresco", precio: 45000 },
@@ -211,6 +213,11 @@ const bodySplash = [
   { img: bs09, name: "Khamrah", marca: "Lattafa", genero: "Unisex", aroma: "Oud, especiado, amaderado", precio: 60000 },
 ];
 
+const mieles = [
+  { img: mielHombre, name: "Vital Honey", marca: "Vital Honey", genero: "Hombre", aroma: "Miel de amor", precio: 10000 },
+  { img: mielMujer, name: "Vital Honey", marca: "Vital Honey", genero: "Mujer", aroma: "Miel de amor", precio: 10000 },
+];
+
 const destacados = [arabes[0], arabes[1], arabes[2], arabes[3], arabes[4], arabes[5]];
 
 const formatPrecio = (n: number) => "$" + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -246,6 +253,7 @@ function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string;
 }
 
 const navItems = [
+  { label: "Novedades", href: "#novedades" },
   { label: "Más Buscados", href: "#destacados" },
   { label: "Árabes", href: "#arabes" },
   { label: "AAA", href: "#aaa" },
@@ -253,6 +261,16 @@ const navItems = [
 ];
 
 export default function App() {
+  const [slide, setSlide] = useState(0);
+  const totalSlides = 3;
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setSlide((s) => (s + 1) % totalSlides);
+    }, 6000);
+    return () => clearInterval(id);
+  }, []);
+
   useEffect(() => {
     const links = document.querySelectorAll('a.nav-scroll-link');
     links.forEach((link) => {
@@ -423,7 +441,7 @@ export default function App() {
           }
         }
 
-        /* ===== HERO ===== */
+        /* ===== HERO / CAROUSEL ===== */
         .hero-section {
           position: relative;
           min-height: 100svh;
@@ -435,13 +453,35 @@ export default function App() {
           margin-top: 0;
           padding-top: 90px;
         }
+        .carousel-viewport {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+        }
+        .carousel-track {
+          display: flex;
+          height: 100%;
+          transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+        }
+        .carousel-slide {
+          position: relative;
+          flex: 0 0 100%;
+          min-height: 100svh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
         .hero-bg {
           position: absolute;
           inset: 0;
-          background-image: url('${heroImg}');
           background-size: cover;
           background-position: center 30%;
           filter: brightness(0.35) saturate(1.1);
+        }
+        .hero-bg-vital {
+          background-image: linear-gradient(160deg, #241a08 0%, #0a0a0a 60%);
+          filter: none;
         }
         .hero-overlay {
           position: absolute;
@@ -456,7 +496,8 @@ export default function App() {
           position: relative;
           z-index: 2;
           padding: 2rem 1.5rem;
-          max-width: 720px;
+          max-width: 860px;
+          width: 100%;
         }
         .hero-badge {
           display: inline-block;
@@ -510,30 +551,108 @@ export default function App() {
           transform: translateY(-2px);
           box-shadow: 0 8px 32px rgba(212,168,83,0.25);
         }
-        .hero-scroll-hint {
+        .hero-collage {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0.7rem;
+          max-width: 400px;
+          margin: 0 auto 2rem;
+        }
+        .hero-collage img {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          border: 1px solid var(--border-gold);
+          border-radius: 50%;
+          box-shadow: 0 10px 28px rgba(0,0,0,0.65);
+          transition: transform 0.3s;
+        }
+        .hero-collage img:hover {
+          transform: scale(1.06);
+        }
+        .hero-honey {
+          display: flex;
+          justify-content: center;
+          gap: 1.5rem;
+          margin: 0 auto 2rem;
+        }
+        .hero-honey img {
+          width: 130px;
+          height: 130px;
+          object-fit: cover;
+          border: 1px solid var(--border-gold);
+          border-radius: 50%;
+          box-shadow: 0 10px 28px rgba(0,0,0,0.65);
+        }
+        .carousel-arrow {
           position: absolute;
-          bottom: 2.5rem;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 5;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          border: 1px solid var(--border-gold);
+          background: rgba(10,10,10,0.55);
+          color: var(--gold);
+          font-size: 1.1rem;
+          line-height: 1;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          transition: background 0.25s, color 0.25s;
+        }
+        .carousel-arrow:hover {
+          background: var(--gold);
+          color: #0a0a0a;
+        }
+        .carousel-arrow.prev { left: 1rem; }
+        .carousel-arrow.next { right: 1rem; }
+        .carousel-dots {
+          position: absolute;
+          bottom: 1.6rem;
           left: 50%;
           transform: translateX(-50%);
-          z-index: 2;
+          z-index: 5;
           display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 0.4rem;
-          color: var(--text-muted);
-          font-size: 0.6rem;
-          letter-spacing: 0.15em;
-          text-transform: uppercase;
-          animation: bounce 2s infinite;
+          gap: 0.6rem;
         }
-        @keyframes bounce {
-          0%, 100% { transform: translateX(-50%) translateY(0); }
-          50% { transform: translateX(-50%) translateY(6px); }
+        .carousel-dots .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 1px solid var(--border-gold);
+          background: transparent;
+          cursor: pointer;
+          padding: 0;
+          transition: background 0.3s, transform 0.3s;
+        }
+        .carousel-dots .dot.active {
+          background: var(--gold);
+          transform: scale(1.25);
+        }
+        @media (max-width: 768px) {
+          .hero-honey img {
+            width: 100px;
+            height: 100px;
+          }
+          .carousel-arrow {
+            width: 38px;
+            height: 38px;
+            font-size: 0.9rem;
+          }
+          .carousel-arrow.prev { left: 0.5rem; }
+          .carousel-arrow.next { right: 0.5rem; }
         }
 
         /* ===== SECTIONS ===== */
         .perfume-section {
           padding: 4rem 0;
+        }
+        .novedades-section {
+          background: radial-gradient(circle at 20% 20%, rgba(212,168,83,0.07), transparent 60%);
         }
         .section-header {
           text-align: center;
@@ -884,26 +1003,105 @@ export default function App() {
         </div>
       </nav>
 
-      {/* HERO */}
+      {/* HERO CAROUSEL */}
       <header className="hero-section">
-        <div className="hero-bg"></div>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <div className="hero-badge">Alta Perfumería</div>
-          <h1 className="hero-title">
-            Tu próxima firma<br /><span>personal está acá</span>
-          </h1>
-          <p className="hero-subtitle">Fragancias árabes originales · Lattafa · Armaf · Afnan</p>
-          <a href="#destacados" className="hero-cta nav-scroll-link">
-            <i className="bi bi-box"></i>
-            Ver Catálogo de Invierno
-          </a>
+        <div className="carousel-viewport">
+          <div className="carousel-track" style={{ transform: `translateX(-${slide * 100}%)` }}>
+            {/* Slide 1: Collage de recomendados */}
+            <div className="carousel-slide">
+              <div className="hero-bg" style={{ backgroundImage: `url('${heroImg}')` }}></div>
+              <div className="hero-overlay"></div>
+              <div className="hero-content">
+                <div className="hero-badge">Los más buscados</div>
+                <h1 className="hero-title">
+                  Los favoritos<br /><span>del momento</span>
+                </h1>
+                <p className="hero-subtitle">Hawas Ice · Asad · Khamrah · 9PM</p>
+                <div className="hero-collage">
+                  {destacados.slice(0, 6).map((p) => (
+                    <a key={p.name} href={waLink(p.name)} target="_blank" rel="noopener noreferrer">
+                      <img src={p.img} alt={p.name} loading="eager" />
+                    </a>
+                  ))}
+                </div>
+                <a href="#destacados" className="hero-cta nav-scroll-link">
+                  <i className="bi bi-box"></i>
+                  Ver Más Buscados
+                </a>
+              </div>
+            </div>
+
+            {/* Slide 2: Vital Honey */}
+            <div className="carousel-slide">
+              <div className="hero-bg hero-bg-vital"></div>
+              <div className="hero-overlay"></div>
+              <div className="hero-content">
+                <div className="hero-badge">Nuevo Ingreso</div>
+                <h1 className="hero-title">
+                  Vital Honey<br /><span>Mielcitas de amor</span>
+                </h1>
+                <p className="hero-subtitle">Hombres & Mujeres · $10.000 c/u</p>
+                <div className="hero-honey">
+                  <img src={mielHombre} alt="Vital Honey Hombre" loading="eager" />
+                  <img src={mielMujer} alt="Vital Honey Mujer" loading="eager" />
+                </div>
+                <a href="#novedades" className="hero-cta nav-scroll-link">
+                  <i className="bi bi-heart"></i>
+                  Ver Novedades
+                </a>
+              </div>
+            </div>
+
+            {/* Slide 3: Ofertas */}
+            <div className="carousel-slide">
+              <div className="hero-bg" style={{ backgroundImage: `url('${heroImg}')`, backgroundPosition: 'center 70%' }}></div>
+              <div className="hero-overlay"></div>
+              <div className="hero-content">
+                <div className="hero-badge">Ofertas</div>
+                <h1 className="hero-title">
+                  AAA y Body Splash<br /><span>precios especiales</span>
+                </h1>
+                <p className="hero-subtitle">AAA $30.000 · Body Splash $25.000</p>
+                <a href="#aaa" className="hero-cta nav-scroll-link">
+                  <i className="bi bi-tag"></i>
+                  Ver Ofertas
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="hero-scroll-hint">
-          <i className="bi bi-chevron-down"></i>
-          Descubrí
+
+        <button className="carousel-arrow prev" onClick={() => setSlide((slide + totalSlides - 1) % totalSlides)} aria-label="Anterior">
+          <i className="bi bi-chevron-left"></i>
+        </button>
+        <button className="carousel-arrow next" onClick={() => setSlide((slide + 1) % totalSlides)} aria-label="Siguiente">
+          <i className="bi bi-chevron-right"></i>
+        </button>
+        <div className="carousel-dots">
+          {[0, 1, 2].map((i) => (
+            <button key={i} className={slide === i ? "dot active" : "dot"} onClick={() => setSlide(i)} aria-label={"Ir al slide " + (i + 1)} />
+          ))}
         </div>
       </header>
+
+      {/* NOVEDADES */}
+      <section id="novedades" className="perfume-section novedades-section">
+        <div className="container">
+          <div className="section-header">
+            <div className="section-divider"></div>
+            <p className="section-tag">Nuevo Ingreso</p>
+            <h2 className="section-title">Vital Honey · Mielcitas de amor</h2>
+            <p className="section-desc">
+              Llegaron las mielcitas de amor que estabas esperando. Hombre y Mujer, $10.000 cada una.
+            </p>
+          </div>
+          <div className="row g-3 justify-content-center">
+            {mieles.map((p, i) => (
+              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} precio={p.precio} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* DESTACADOS */}
       <section id="destacados" className="perfume-section">
@@ -1009,7 +1207,7 @@ export default function App() {
       </footer>
 
       {/* WHATSAPP FLOATING */}
-      <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="wa-float">
+      <a href="https://wa.me/5491131430876?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="wa-float">
         <i className="bi bi-whatsapp"></i>
       </a>
 
