@@ -1,13 +1,8 @@
 services:
   - type: static
     name: dionisio-perfumeria
-    buildCommand: npm install -g pnpm@9 && pnpm config set minimum-release-age 0 --location project && pnpm install --no-frozen-lockfile && NODE_ENV=production BASE_PATH=/ pnpm --filter @workspace/dionisio-perfumeria run build
-    staticPublishPath: artifacts/dionisio-perfumeria/dist/public
-    env:
-      - key: BASE_PATH
-        value: "/"
-      - key: NODE_ENV
-        value: production
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
     headers:
       - path: /*
         name: Cache-Control
