@@ -1,0 +1,43 @@
+Especificaciones de Diseño:
+Fondo (Hero Section): Utiliza la imagen proporcionada (Dionisio Perfumería con la rosa roja de fondo) como fondo principal del encabezado. El texto 'Dionisio Perfumería' debe resaltar con una tipografía elegante y clara.
+
+Navegación: Crea un menú simple con tres apartados: Perfumes Árabes, Perfumes AAA, y Body Splash.
+
+Cuerpo de la página: * Divide la web en 3 secciones correspondientes al menú.
+
+Cada sección contendrá una cuadrícula (grid) de imágenes de perfumes.
+
+Funcionalidad Crucial: Al hacer clic en la foto de cualquier perfume, debe redirigir automáticamente al WhatsApp: https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20este%20perfume.
+
+Botón Flotante/Barra Inferior: Implementa una barra verde (estilo WhatsApp) que persiga al usuario al hacer scroll (sticky/fixed bottom). El texto debe decir: "¡Cualquier perfume que no veas, consultá acá!" y al hacer clic debe abrir el mismo enlace de WhatsApp.
+
+Estilo Visual:
+Usa una paleta de colores elegante (negros, blancos y el verde de WhatsApp para los llamados a la acción).
+
+Asegúrate de que las imágenes tengan un efecto 'hover' (que se agranden o iluminen un poco al pasar el mouse) para indicar que son clickeables.
+
+Diseño 100% Mobile First (que se vea perfecto en celulares)."
+
+Estructura de archivos sugerida (por si necesitás guiarlo más):
+1. HTML (index.html)
+Debe contener las secciones:
+
+<nav> para el menú.
+
+<header> con el fondo de la rosa.
+
+<section id="arabes">, <section id="aaa">, <section id="body-splash">.
+
+<footer> o <div> fijo para el mensaje de consulta.
+
+2. CSS (style.css)
+.hero-section { background-image: url('tu-imagen.jpg'); background-size: cover; }
+
+.perfume-card img { cursor: pointer; transition: 0.3s; }
+
+.whatsapp-bar { position: fixed; bottom: 0; width: 100%; background: #25D366; color: white; text-align: center; padding: 10px; z-index: 1000; }
+
+3. JavaScript (script.js)
+Un script simple para que al hacer clic en las imágenes se dispare el window.location.href hacia tu número de WhatsApp.
+
+Nota importante: Cuando cargues las imágenes de los perfumes en Replit, tratá de que pesen poco (menos de 200kb cada una) para que la página vuele. ¡Cualquier duda con el código me avisás!
