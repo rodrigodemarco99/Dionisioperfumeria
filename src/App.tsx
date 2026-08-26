@@ -272,17 +272,162 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const jsonLd = {
-      "@context": "https://schema.org",
-      "@type": "Store",
-      "name": "Dionisio Perfumería",
-      "description": "Perfumes árabes, AAA y body splash en Buenos Aires, Argentina.",
-      "url": "https://perfumeriadionisio.com",
-      "telephone": "+5491131430876",
-      "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
-      "geo": { "@type": "GeoCoordinates", "latitude": -34.6037, "longitude": -58.3816 },
-      "areaServed": { "@type": "Country", "name": "Argentina" }
-    };
+    const jsonLd = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Dionisio Perfumería",
+        "description": "Perfumería en Buenos Aires. Perfumes árabes, AAA y body splash con envío gratis. Lattafa, Armaf, Afnan, Jean Paul Gaultier, Paco Rabanne.",
+        "url": "https://perfumeriadionisio.com",
+        "telephone": "+5491131430876",
+        "email": "info@perfumeriadionisio.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avellaneda",
+          "addressLocality": "Buenos Aires",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": -34.6037, "longitude": -58.3816 },
+        "areaServed": [
+          { "@type": "City", "name": "Buenos Aires" },
+          { "@type": "City", "name": "Avellaneda" },
+          { "@type": "City", "name": "La Boca" },
+          { "@type": "Country", "name": "Argentina" }
+        ],
+        "priceRange": "$10000 - $70000",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        },
+        "sameAs": [],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catálogo de Perfumes",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "Perfumes Árabes",
+              "numberOfItems": arabes.length,
+              "itemListElement": arabes.slice(0, 20).map((p) => ({
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": p.name + " - " + p.marca,
+                  "description": p.aroma + " | " + p.genero,
+                  "image": "https://perfumeriadionisio.com" + p.img,
+                  "brand": { "@type": "Brand", "name": p.marca }
+                },
+                "price": p.precio,
+                "priceCurrency": "ARS",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@type": "Store", "name": "Dionisio Perfumería" }
+              }))
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Perfumes AAA",
+              "numberOfItems": aaa.length,
+              "itemListElement": aaa.map((p) => ({
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": p.name + " - " + p.marca,
+                  "description": p.aroma + " | " + p.genero,
+                  "brand": { "@type": "Brand", "name": p.marca }
+                },
+                "price": p.precio,
+                "priceCurrency": "ARS",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@type": "Store", "name": "Dionisio Perfumería" }
+              }))
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Body Splash",
+              "numberOfItems": bodySplash.length,
+              "itemListElement": bodySplash.map((p) => ({
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": p.name + " - " + p.marca,
+                  "description": p.aroma + " | " + p.genero,
+                  "brand": { "@type": "Brand", "name": p.marca }
+                },
+                "price": p.precio,
+                "priceCurrency": "ARS",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@type": "Store", "name": "Dionisio Perfumería" }
+              }))
+            }
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuáles son los perfumes árabes más vendidos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los perfumes árabes más buscados en Buenos Aires son: Hawas Ice de Rasasi, Asad de Lattafa, Khamrah Qahwa de Lattafa, Club de Nuit Intense Man de Armaf, 9pm Night Out de Afnan, y Yara de Lattafa. Todos disponibles con envío gratis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuestan los perfumes AAA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nuestros perfumes AAA de inspiración premium (Jean Paul Gaultier, Paco Rabanne, Carolina Herrera) cuestan $30.000. Son fragancias de alta calidad a precios accesibles con envío gratis en Buenos Aires."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hacen envíos a todo Argentina?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, realizamos envíos a todo el país. En Avellaneda y La Boca el envío es GRATIS e inmediato. Para el resto de Argentina consultanos por WhatsApp al +54 9 11 3143-0876."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué es un perfume árabe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los perfumes árabes son fragancias originarias de Medio Oriente, conocidas por su intensidad, duración y notas de oud, especias, ámbar y maderas nobles. Marcas como Lattafa, Armaf y Afnan son las más populares."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tienen body splash de Victoria's Secret?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, tenemos body splash de Victoria's Secret como Midnight Fantasy, Temptation, Aqua Kiss, Love Spell y Sugar High Shimmer. También tenemos body splash de Armaf, Lattafa y Al Wataniah. Todos a $25.000."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuáles son los mejores perfumes para hombre?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los mejores perfumes para hombre son: Asad de Lattafa (amaderado, oud), Club de Nuit Intense Man de Armaf (cítrico, amaderado), Hawas Ice de Rasasi (mentolado, acuático), 9pm Night Out de Afnan (amaderado, ámbar), y The Kingdom de Lattafa (amaderado, cuero)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué perfume árabe regalar a una mujer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los perfumes árabes para mujer más populares para regalar son: Yara Rosa de Lattafa (floral, frutal), Marshmallow Blush de Lattafa (dulce, vainilla), Choco Overdose de Lattafa (chocolate, gourmand), y Club de Nuit Woman de Armaf (floral, frutal)."
+            }
+          }
+        ]
+      }
+    ];
     const s = document.createElement('script');
     s.type = 'application/ld+json';
     s.text = JSON.stringify(jsonLd);
@@ -1155,7 +1300,7 @@ export default function App() {
             <p className="section-tag">Oriente en tu piel</p>
             <h2 className="section-title">Perfumes Árabes</h2>
             <p className="section-desc">
-              Fragancias orientales de casas árabes reconocidas. Oud, especias y maderas nobles.
+              Los mejores perfumes árabes en Buenos Aires: Lattafa, Rasasi, Armaf, Afnan y más. Oud, especias y maderas nobles. Envío gratis.
             </p>
           </div>
           <div className="row g-3">
@@ -1174,7 +1319,7 @@ export default function App() {
             <p className="section-tag">Calidad Premium</p>
             <h2 className="section-title">Perfumes AAA</h2>
             <p className="section-desc">
-              Inspirados en las mejores fragancias del mundo, a precios accesibles.
+              Perfumes AAA de inspiración premium: Jean Paul Gaultier, Paco Rabanne, Carolina Herrera. $30.000. Alta calidad en Buenos Aires.
             </p>
           </div>
           {aaa.length > 0 ? (
@@ -1200,7 +1345,7 @@ export default function App() {
             <p className="section-tag">Frescura todo el día</p>
             <h2 className="section-title">Body Splash</h2>
             <p className="section-desc">
-              Splashes corporales vibrantes y frescos, ideales para el día a día.
+              Body splash de Victoria's Secret, Armaf y Lattafa. Splashes corporales frescos y vibrantes. $25.000. Envío gratis en Buenos Aires.
             </p>
           </div>
           {bodySplash.length > 0 ? (
@@ -1218,15 +1363,78 @@ export default function App() {
         </div>
       </section>
 
+      {/* FAQ SEO */}
+      <section className="perfume-section" aria-label="Preguntas frecuentes">
+        <div className="container" style={{ maxWidth: '800px' }}>
+          <div className="section-header">
+            <div className="section-divider"></div>
+            <p className="section-tag">¿Tenés dudas?</p>
+            <h2 className="section-title">Preguntas Frecuentes</h2>
+          </div>
+          <div style={{ marginTop: '2rem' }}>
+            {[
+              { q: "¿Cuáles son los perfumes árabes más vendidos?", a: "Los más buscados son Hawas Ice (Rasasi), Asad (Lattafa), Khamrah Qahwa (Lattafa), Club de Nuit Intense Man (Armaf) y 9pm Night Out (Afnan). Todos disponibles con envío gratis." },
+              { q: "¿Cuánto cuestan los perfumes AAA?", a: "Nuestros perfumes AAA de inspiración premium (Jean Paul Gaultier, Paco Rabanne, Carolina Herrera) cuestan $30.000. Alta calidad a precios accesibles." },
+              { q: "¿Hacen envíos a todo Argentina?", a: "Sí, envíos a todo el país. En Avellaneda y La Boca el envío es GRATIS e inmediato. Consultanos por WhatsApp al +54 9 11 3143-0876." },
+              { q: "¿Qué es un perfume árabe?", a: "Son fragancias de Medio Oriente, conocidas por su intensidad y duración. Notas de oud, especias, ámbar y maderas nobles. Marcas: Lattafa, Armaf, Afnan." },
+              { q: "¿Tienen body splash de Victoria's Secret?", a: "Sí, tenemos Midnight Fantasy, Temptation, Aqua Kiss, Love Spell y más. También de Armaf y Lattafa. Todos a $25.000." },
+              { q: "¿Mejores perfumes para hombre?", a: "Asad (amaderado, oud), Club de Nuit Intense Man (cítrico, amaderado), Hawas Ice (mentolado, acuático), The Kingdom (amaderado, cuero)." },
+            ].map((faq, i) => (
+              <details key={i} style={{ borderBottom: '1px solid var(--border-dim)', padding: '1rem 0' }}>
+                <summary style={{ cursor: 'pointer', color: 'var(--text-primary)', fontSize: '0.85rem', fontWeight: 500, listStyle: 'none' }}>
+                  <i className="bi bi-chevron-right me-2" style={{ color: 'var(--gold)', fontSize: '0.7rem' }}></i>
+                  {faq.q}
+                </summary>
+                <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '0.8rem', lineHeight: 1.6, paddingLeft: '1.2rem' }}>{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="dionisio-footer">
-        <p className="footer-brand">Dionisio Perfumería</p>
-        <p className="footer-tagline">Buenos Aires, Argentina</p>
-        <p className="footer-tagline" style={{ marginTop: '0.8rem' }}>
-          <a href="https://wa.me/5491131430876" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'none' }}>
-            <i className="bi bi-whatsapp me-1"></i>+54 9 11 3143-0876
-          </a>
-        </p>
+        <div className="container">
+          <p className="footer-brand">Dionisio Perfumería</p>
+          <p className="footer-tagline">Tu perfumería de confianza en Buenos Aires</p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginTop: '1.5rem' }}>
+            <div style={{ textAlign: 'left', minWidth: '200px' }}>
+              <p style={{ color: 'var(--gold)', fontWeight: 600, fontSize: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Contacto</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
+                <a href="https://wa.me/5491131430876" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'none' }}>
+                  <i className="bi bi-whatsapp me-1"></i>+54 9 11 3143-0876
+                </a>
+              </p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
+                <i className="bi bi-geo-alt me-1" style={{ color: 'var(--gold)' }}></i>Avellaneda, Buenos Aires
+              </p>
+            </div>
+            <div style={{ textAlign: 'left', minWidth: '200px' }}>
+              <p style={{ color: 'var(--gold)', fontWeight: 600, fontSize: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Horarios</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
+                <i className="bi bi-clock me-1" style={{ color: 'var(--gold)' }}></i>Lunes a Domingo: 10:00 - 20:00
+              </p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
+                <i className="bi bi-truck me-1" style={{ color: 'var(--gold)' }}></i>Envío gratis en CABA y zona sur
+              </p>
+            </div>
+            <div style={{ textAlign: 'left', minWidth: '200px' }}>
+              <p style={{ color: 'var(--gold)', fontWeight: 600, fontSize: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Categorías</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
+                <a href="#arabes" className="nav-scroll-link" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Perfumes Árabes</a>
+              </p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
+                <a href="#aaa" className="nav-scroll-link" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Perfumes AAA</a>
+              </p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
+                <a href="#body-splash" className="nav-scroll-link" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Body Splash</a>
+              </p>
+            </div>
+          </div>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.6rem', marginTop: '2rem', letterSpacing: '0.05em' }}>
+            &copy; 2026 Dionisio Perfumería. Todos los derechos reservados.
+          </p>
+        </div>
       </footer>
 
       {/* WHATSAPP FLOATING BUTTON */}
