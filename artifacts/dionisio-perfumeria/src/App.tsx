@@ -172,6 +172,43 @@ export default function App() {
       document.body.appendChild(script);
     }
 
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Dionisio Perfumería",
+      "description": "Perfumes árabes, AAA y body splash en Buenos Aires, Argentina. Marcas: Lattafa, Armaf, Afnan, Xerjoff, Jean Paul Gaultier, Paco Rabanne, Carolina Herrera, Victoria's Secret.",
+      "url": "https://perfumeriadionisio.com",
+      "telephone": "+5491132393925",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.6037,
+        "longitude": -58.3816
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Argentina"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Dionisio Perfumería"
+      },
+      "sameAs": [],
+      "offers": {
+        "@type": "AggregateOffer",
+        "availability": "https://schema.org/InStock",
+        "priceCurrency": "ARS"
+      }
+    };
+    const scriptEl = document.createElement('script');
+    scriptEl.type = 'application/ld+json';
+    scriptEl.text = JSON.stringify(jsonLd);
+    document.head.appendChild(scriptEl);
+
     const links = document.querySelectorAll('a.nav-scroll-link');
     links.forEach((link) => {
       link.addEventListener('click', (e) => {
@@ -602,6 +639,37 @@ export default function App() {
           font-size: 1.2rem;
         }
 
+        /* WHATSAPP FLOATING BUTTON */
+        .wa-fab {
+          position: fixed;
+          bottom: 80px;
+          right: 24px;
+          width: 60px;
+          height: 60px;
+          background: #25D366;
+          color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.8rem;
+          z-index: 2001;
+          box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+          text-decoration: none;
+          transition: transform 0.2s, box-shadow 0.2s;
+          animation: wa-pulse 2s infinite;
+        }
+        .wa-fab:hover {
+          transform: scale(1.1);
+          box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+          color: #fff;
+          text-decoration: none;
+        }
+        @keyframes wa-pulse {
+          0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+          50% { box-shadow: 0 4px 28px rgba(37,211,102,0.7); }
+        }
+
         /* FOOTER */
         .dionisio-footer {
           background: #f8f6f2;
@@ -689,7 +757,7 @@ export default function App() {
       </header>
 
       {/* PERFUMES ÁRABES */}
-      <section id="arabes" className="perfume-section">
+      <section id="arabes" className="perfume-section" aria-label="Perfumes Árabes">
         <div className="container">
           <div className="text-center mb-5">
             <div className="section-divider"></div>
@@ -708,7 +776,7 @@ export default function App() {
       </section>
 
       {/* PERFUMES AAA */}
-      <section id="aaa" className="perfume-section">
+      <section id="aaa" className="perfume-section" aria-label="Perfumes AAA">
         <div className="container">
           <div className="text-center mb-5">
             <div className="section-divider"></div>
@@ -734,7 +802,7 @@ export default function App() {
       </section>
 
       {/* BODY SPLASH */}
-      <section id="body-splash" className="perfume-section">
+      <section id="body-splash" className="perfume-section" aria-label="Body Splash">
         <div className="container">
           <div className="text-center mb-5">
             <div className="section-divider"></div>
@@ -763,12 +831,22 @@ export default function App() {
       <footer className="dionisio-footer">
         <p className="footer-brand">Dionisio Perfumería</p>
         <p className="footer-tagline">Buenos Aires, Argentina</p>
+        <p className="footer-tagline" style={{ marginTop: '0.8rem' }}>
+          <a href="https://wa.me/5491132393925" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'none' }}>
+            <i className="bi bi-whatsapp me-1"></i>+54 9 11 3239-3925
+          </a>
+        </p>
       </footer>
+
+      {/* WHATSAPP FLOATING BUTTON */}
+      <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="wa-fab" aria-label="Consultar por WhatsApp">
+        <i className="bi bi-whatsapp"></i>
+      </a>
 
       {/* WHATSAPP FLOATING BAR */}
       <a href="https://wa.me/5491132393925?text=Hola!%20Me%20interesa%20consultar%20sobre%20sus%20perfumes." target="_blank" rel="noopener noreferrer" className="wa-bar">
         <i className="bi bi-whatsapp"></i>
-        ¡Cualquier perfume que no veas, consultá acá!
+        ¡Cualquier perfume que no veas, consultá por WhatsApp!
       </a>
     </>
   );
