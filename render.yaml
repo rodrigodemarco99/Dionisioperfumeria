@@ -1,9 +1,15 @@
 services:
   - type: static
     name: dionisio-perfumeria
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
+    buildCommand: npm install -g pnpm && pnpm install && pnpm --filter @workspace/dionisio-perfumeria run build
+    staticPublishPath: artifacts/dionisio-perfumeria/dist/public
     headers:
       - path: /*
         name: Cache-Control
         value: public, max-age=31536000, immutable
+      - path: /sitemap.xml
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: /robots.txt
+        name: Cache-Control
+        value: public, max-age=3600
