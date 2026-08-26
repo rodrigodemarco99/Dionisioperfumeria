@@ -229,7 +229,7 @@ function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string;
       <a href={waLink(name)} target="_blank" rel="noopener noreferrer" className="perfume-card-link">
         <div className="perfume-card">
           <div className="perfume-img-wrap">
-            <img src={img} alt={name} className="perfume-img" loading="lazy" />
+            <img src={img} alt={name + " " + marca + " perfume árabe Buenos Aires"} className="perfume-img" loading="lazy" />
             <div className="aroma-overlay">
               <div className="aroma-overlay-inner">
                 <p className="aroma-label">Notas</p>
@@ -1298,7 +1298,7 @@ export default function App() {
           <div className="section-header">
             <div className="section-divider"></div>
             <p className="section-tag">Oriente en tu piel</p>
-            <h2 className="section-title">Perfumes Árabes</h2>
+            <h2 className="section-title">Perfumes Árabes en Buenos Aires</h2>
             <p className="section-desc">
               Los mejores perfumes árabes en Buenos Aires: Lattafa, Rasasi, Armaf, Afnan y más. Oud, especias y maderas nobles. Envío gratis.
             </p>
@@ -1317,7 +1317,7 @@ export default function App() {
           <div className="section-header">
             <div className="section-divider"></div>
             <p className="section-tag">Calidad Premium</p>
-            <h2 className="section-title">Perfumes AAA</h2>
+            <h2 className="section-title">Perfumes AAA en CABA</h2>
             <p className="section-desc">
               Perfumes AAA de inspiración premium: Jean Paul Gaultier, Paco Rabanne, Carolina Herrera. $30.000. Alta calidad en Buenos Aires.
             </p>
@@ -1343,7 +1343,7 @@ export default function App() {
           <div className="section-header">
             <div className="section-divider"></div>
             <p className="section-tag">Frescura todo el día</p>
-            <h2 className="section-title">Body Splash</h2>
+            <h2 className="section-title">Body Splash Buenos Aires</h2>
             <p className="section-desc">
               Body splash de Victoria's Secret, Armaf y Lattafa. Splashes corporales frescos y vibrantes. $25.000. Envío gratis en Buenos Aires.
             </p>
@@ -1360,6 +1360,28 @@ export default function App() {
               <p>Próximamente nuevos productos</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* SEO CONTENT BLOCK */}
+      <section className="perfume-section" aria-label="Sobre Dionisio Perfumería" style={{ background: 'var(--bg-black)' }}>
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+            <h2 className="section-title" style={{ marginBottom: '1rem' }}>Perfumería en CABA y Buenos Aires</h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: 1.8, maxWidth: '700px', margin: '0 auto 1rem' }}>
+              <strong style={{ color: 'var(--gold)' }}>Dionisio Perfumería</strong> es tu perfumería de confianza en <strong>CABA y Buenos Aires</strong>. 
+              Somos especialistas en <strong>perfumes árabes</strong> de las mejores marcas: Lattafa, Rasasi, Armaf, Afnan, Bharara y Al Haramain. 
+              También contamos con <strong>perfumes AAA</strong> de inspiración premium y <strong>body splash</strong> de Victoria's Secret.
+            </p>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: 1.8, maxWidth: '700px', margin: '0 auto 1rem' }}>
+              Hacemos <strong>envío gratis e inmediato en Avellaneda y La Boca</strong>. Para el resto de Buenos Aires y CABA, consultanos por WhatsApp. 
+              Nuestros perfumes árabes son los más buscados de la zona sur: desde <strong>Asad y Hawas Ice</strong> hasta <strong>Khamrah Qahwa</strong> y las líneas Yara.
+            </p>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: 1.8, maxWidth: '700px', margin: '0 auto' }}>
+              Si buscás <strong>perfumes árabes en Buenos Aires</strong>, <strong>perfumería en CABA</strong> o <strong>colonias árabes baratas</strong>, 
+              Dionisio Perfumería es tu mejor opción. Más de 100 fragancias disponibles con los mejores precios de la ciudad.
+            </p>
+          </div>
         </div>
       </section>
 
