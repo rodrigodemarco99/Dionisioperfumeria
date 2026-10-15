@@ -126,16 +126,6 @@ import wantedEdt from "@assets/Captura de pantalla 2026-10-15 163905.png";
 import turathiBlue from "@assets/Captura de pantalla 2026-10-15 163913.png";
 import irida from "@assets/Captura de pantalla 2026-10-15 163929.png";
 
-import bs01 from "@assets/imgvs1_1776041960423.jpg";
-import bs02 from "@assets/imgvs2_1776041960424.jpg";
-import bs03 from "@assets/imgvs3_1776041960425.jpg";
-import bs04 from "@assets/imgvs4_1776041960425.jpg";
-import bs05 from "@assets/imgvs5_1776041960426.jpg";
-import bs06 from "@assets/Captura_de_pantalla_2026-04-12_221912_1776043185592.png";
-import bs07 from "@assets/Captura_de_pantalla_2026-04-12_221856_1776043185593.png";
-import bs08 from "@assets/Captura_de_pantalla_2026-04-12_221846_1776043185594.png";
-import bs09 from "@assets/Captura_de_pantalla_2026-04-12_221808_1776043185595.png";
-
 const waLink = (name: string) =>
   "https://wa.me/5491131430876?text=" + encodeURIComponent("Hola! Me interesa el perfume: " + name);
 
@@ -252,18 +242,6 @@ const aaa = [
   { img: badBoyExtreme, name: "Bad Boy Extreme", marca: "Carolina Herrera", genero: "Hombre", aroma: "Cuero, especiado, amaderado", precio: 40000 },
 ];
 
-const bodySplash = [
-  { img: bs01, name: "Midnight Fantasy", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado", precio: 35000 },
-  { img: bs02, name: "Temptation", marca: "Victoria's Secret", genero: "Mujer", aroma: "Oriental, vainilla, almizclado", precio: 35000 },
-  { img: bs03, name: "Aqua Kiss", marca: "Victoria's Secret", genero: "Mujer", aroma: "Floral, acuático, fresco", precio: 35000 },
-  { img: bs04, name: "Sugar High Shimmer", marca: "Victoria's Secret", genero: "Mujer", aroma: "Dulce, frutal, almizclado", precio: 35000 },
-  { img: bs05, name: "Love Spell", marca: "Victoria's Secret", genero: "Mujer", aroma: "Frutal, floral, almizclado", precio: 35000 },
-  { img: bs06, name: "Coconut Musk", marca: "Al Wataniah", genero: "Mujer", aroma: "Coco, almizclado, dulce", precio: 35000 },
-  { img: bs07, name: "Odyssey Mandarin Sky Body Spray", marca: "Armaf", genero: "Unisex", aroma: "Cítrico, acuático, fresco", precio: 35000 },
-  { img: bs08, name: "Ameer Al Arab", marca: "Lattafa", genero: "Unisex", aroma: "Acuático, amaderado, almizclado", precio: 35000 },
-  { img: bs09, name: "Khamrah", marca: "Lattafa", genero: "Unisex", aroma: "Oud, especiado, amaderado", precio: 70000 },
-];
-
 const diaDeLaMadre = [
   arabes.find((p) => p.name === "Yara Rosa")!,
   arabes.find((p) => p.name === "Yara Amarillo")!,
@@ -317,7 +295,6 @@ const navItems = [
   { label: "Más Buscados", href: "#destacados" },
   { label: "Árabes", href: "#arabes" },
   { label: "AAA", href: "#aaa" },
-  { label: "Body Splash", href: "#body-splash" },
 ];
 
 export default function App() {
@@ -337,10 +314,10 @@ export default function App() {
         "@context": "https://schema.org",
         "@type": "Store",
         "name": "Dionisio Perfumería",
-        "description": "Perfumería en Buenos Aires. Perfumes árabes, AAA y body splash con envío gratis. Lattafa, Armaf, Afnan, Jean Paul Gaultier, Paco Rabanne.",
-        "url": "https://perfumeriadionisio.com",
+        "description": "Perfumería en Buenos Aires. Perfumes árabes y AAA con envío gratis. Lattafa, Armaf, Afnan, Jean Paul Gaultier, Paco Rabanne.",
+        "url": "https://dionisioperfumeria.com",
         "telephone": "+5491131430876",
-        "email": "info@perfumeriadionisio.com",
+        "email": "info@dionisioperfumeria.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Avellaneda",
@@ -377,7 +354,7 @@ export default function App() {
                   "@type": "Product",
                   "name": p.name + " - " + p.marca,
                   "description": p.aroma + " | " + p.genero,
-                  "image": "https://perfumeriadionisio.com" + p.img,
+                  "image": "https://dionisioperfumeria.com" + p.img,
                   "brand": { "@type": "Brand", "name": p.marca }
                 },
                 "price": p.precio,
@@ -391,24 +368,6 @@ export default function App() {
               "name": "Perfumes AAA",
               "numberOfItems": aaa.length,
               "itemListElement": aaa.map((p) => ({
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Product",
-                  "name": p.name + " - " + p.marca,
-                  "description": p.aroma + " | " + p.genero,
-                  "brand": { "@type": "Brand", "name": p.marca }
-                },
-                "price": p.precio,
-                "priceCurrency": "ARS",
-                "availability": "https://schema.org/InStock",
-                "seller": { "@type": "Store", "name": "Dionisio Perfumería" }
-              }))
-            },
-            {
-              "@type": "OfferCatalog",
-              "name": "Body Splash",
-              "numberOfItems": bodySplash.length,
-              "itemListElement": bodySplash.map((p) => ({
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
@@ -459,14 +418,6 @@ export default function App() {
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Los perfumes árabes son fragancias originarias de Medio Oriente, conocidas por su intensidad, duración y notas de oud, especias, ámbar y maderas nobles. Marcas como Lattafa, Armaf y Afnan son las más populares."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Tienen body splash de Victoria's Secret?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, tenemos body splash de Victoria's Secret como Midnight Fantasy, Temptation, Aqua Kiss, Love Spell y Sugar High Shimmer. También tenemos body splash de Armaf, Lattafa y Al Wataniah. Todos a $35.000."
             }
           },
           {
@@ -1210,7 +1161,7 @@ export default function App() {
 
       {/* SHIPPING BAR */}
       <div className="top-shipping-bar">
-        <i className="bi bi-truck me-1"></i> Envío GRATIS e inmediato en Avellaneda y La Boca <span>�Yss</span>
+        <i className="bi bi-truck me-1"></i> Envío GRATIS e inmediato en Avellaneda y La Boca
       </div>
 
       {/* NAVBAR */}
@@ -1289,9 +1240,9 @@ export default function App() {
               <div className="hero-content">
                 <div className="hero-badge">Ofertas</div>
                 <h1 className="hero-title">
-                  AAA y Body Splash<br /><span>precios especiales</span>
+                  Perfumes AAA<br /><span>precios especiales</span>
                 </h1>
-                <p className="hero-subtitle">AAA $40.000 · Body Splash $35.000</p>
+                <p className="hero-subtitle">AAA $40.000 · Envío gratis</p>
                 <a href="#aaa" className="hero-cta nav-scroll-link">
                   <i className="bi bi-tag"></i>
                   Ver Ofertas
@@ -1404,32 +1355,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* BODY SPLASH */}
-      <section id="body-splash" className="perfume-section" aria-label="Body Splash">
-        <div className="container">
-          <div className="section-header">
-            <div className="section-divider"></div>
-            <p className="section-tag">Frescura todo el día</p>
-            <h2 className="section-title">Body Splash Buenos Aires</h2>
-            <p className="section-desc">
-              Body splash de Victoria's Secret, Armaf y Lattafa. Splashes corporales frescos y vibrantes. $35.000. Envío gratis en Buenos Aires.
-            </p>
-          </div>
-          {bodySplash.length > 0 ? (
-            <div className="row g-3">
-              {bodySplash.map((p, i) => (
-                <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} precio={p.precio} />
-              ))}
-            </div>
-          ) : (
-            <div className="coming-soon">
-              <i className="bi bi-stars"></i>
-              <p>Próximamente nuevos productos</p>
-            </div>
-          )}
-        </div>
-      </section>
-
       {/* SEO CONTENT BLOCK */}
       <section className="perfume-section" aria-label="Sobre Dionisio Perfumería" style={{ background: 'var(--bg-black)' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
@@ -1438,7 +1363,7 @@ export default function App() {
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: 1.8, maxWidth: '700px', margin: '0 auto 1rem' }}>
               <strong style={{ color: 'var(--gold)' }}>Dionisio Perfumería</strong> es tu perfumería de confianza en <strong>CABA y Buenos Aires</strong>. 
               Somos especialistas en <strong>perfumes árabes</strong> de las mejores marcas: Lattafa, Rasasi, Armaf, Afnan, Bharara y Al Haramain. 
-              También contamos con <strong>perfumes AAA</strong> de inspiración premium y <strong>body splash</strong> de Victoria's Secret.
+              También contamos con <strong>perfumes AAA</strong> de inspiración premium.
             </p>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', lineHeight: 1.8, maxWidth: '700px', margin: '0 auto 1rem' }}>
               Hacemos <strong>envío gratis e inmediato en Avellaneda y La Boca</strong>. Para el resto de Buenos Aires y CABA, consultanos por WhatsApp. 
@@ -1466,7 +1391,6 @@ export default function App() {
               { q: "¿Cuánto cuestan los perfumes AAA?", a: "Nuestros perfumes AAA de inspiración premium (Jean Paul Gaultier, Paco Rabanne, Carolina Herrera) cuestan $40.000. Alta calidad a precios accesibles." },
               { q: "¿Hacen envíos a todo Argentina?", a: "Sí, envíos a todo el país. En Avellaneda y La Boca el envío es GRATIS e inmediato. Consultanos por WhatsApp al +54 9 11 3143-0876." },
               { q: "¿Qué es un perfume árabe?", a: "Son fragancias de Medio Oriente, conocidas por su intensidad y duración. Notas de oud, especias, ámbar y maderas nobles. Marcas: Lattafa, Armaf, Afnan." },
-              { q: "¿Tienen body splash de Victoria's Secret?", a: "Sí, tenemos Midnight Fantasy, Temptation, Aqua Kiss, Love Spell y más. También de Armaf y Lattafa. Todos a $35.000." },
               { q: "¿Mejores perfumes para hombre?", a: "Asad (amaderado, oud), Club de Nuit Intense Man (cítrico, amaderado), Hawas Ice (mentolado, acuático), The Kingdom (amaderado, cuero)." },
             ].map((faq, i) => (
               <details key={i} style={{ borderBottom: '1px solid var(--border-dim)', padding: '1rem 0' }}>
@@ -1514,9 +1438,6 @@ export default function App() {
               </p>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
                 <a href="#aaa" className="nav-scroll-link" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Perfumes AAA</a>
-              </p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.75rem', lineHeight: 1.8 }}>
-                <a href="#body-splash" className="nav-scroll-link" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>Body Splash</a>
               </p>
             </div>
           </div>
