@@ -315,9 +315,9 @@ export default function App() {
         "@type": "Store",
         "name": "Dionisio Perfumería",
         "description": "Perfumería en Buenos Aires. Perfumes árabes y AAA con envío gratis. Lattafa, Armaf, Afnan, Jean Paul Gaultier, Paco Rabanne.",
-        "url": "https://dionisioperfumeria.com",
+        "url": "https://www.perfumeriadionisio.com",
         "telephone": "+5491131430876",
-        "email": "info@dionisioperfumeria.com",
+        "email": "info@perfumeriadionisio.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Avellaneda",
@@ -354,7 +354,7 @@ export default function App() {
                   "@type": "Product",
                   "name": p.name + " - " + p.marca,
                   "description": p.aroma + " | " + p.genero,
-                  "image": "https://dionisioperfumeria.com" + p.img,
+                  "image": "https://www.perfumeriadionisio.com" + p.img,
                   "brand": { "@type": "Brand", "name": p.marca }
                 },
                 "price": p.precio,
