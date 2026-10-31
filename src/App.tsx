@@ -308,10 +308,10 @@ function CarteraCard({ img, name, marca, precio }: { img: string; name: string; 
       <a href={waLink(name)} target="_blank" rel="noopener noreferrer" className="perfume-card-link">
         <div className="perfume-card">
           <div className="perfume-img-wrap">
-            <img src={img} alt={name + " " + marca + " cartera original"} className="perfume-img" loading="lazy" />
+            <img src={img} alt={name + " " + marca + " cartera"} className="perfume-img" loading="lazy" />
             <div className="aroma-overlay">
               <div className="aroma-overlay-inner">
-                <p className="aroma-label">Cartera Original</p>
+                <p className="aroma-label">Cartera</p>
                 <p className="aroma-text">Cuero premium</p>
                 <span className="aroma-cta"><i className="bi bi-whatsapp"></i> Consultar</span>
               </div>
@@ -686,6 +686,9 @@ export default function App() {
           align-items: center;
           justify-content: center;
           text-align: center;
+        }
+        .slide-carteras {
+          padding-top: 2.5rem;
         }
         .hero-bg {
           position: absolute;
@@ -1284,7 +1287,7 @@ export default function App() {
             </div>
 
             {/* Slide 2: Carteras */}
-            <div className="carousel-slide">
+            <div className="carousel-slide slide-carteras">
               <div className="hero-bg hero-bg-carteras"></div>
               <div className="hero-overlay"></div>
               <div className="hero-content">
@@ -1292,7 +1295,7 @@ export default function App() {
                 <h1 className="hero-title">
                   Carteras<br /><span>para complementar tu look</span>
                 </h1>
-                <p className="hero-subtitle">Carteras originales · $60.000</p>
+                <p className="hero-subtitle">Carteras · $60.000</p>
                 <div className="hero-collage">
                   {carteras.slice(0, 6).map((p, i) => (
                     <a key={i} href={waLink(p.name)} target="_blank" rel="noopener noreferrer">
@@ -1371,14 +1374,14 @@ export default function App() {
       </section>
 
       {/* CARTERAS */}
-      <section id="carteras" className="perfume-section" aria-label="Carteras Originales">
+      <section id="carteras" className="perfume-section" aria-label="Carteras">
         <div className="container">
           <div className="section-header">
             <div className="section-divider"></div>
             <p className="section-tag">Nuevo Ingreso</p>
-            <h2 className="section-title">Carteras Originales</h2>
+            <h2 className="section-title">Carteras</h2>
             <p className="section-desc">
-              Carteras y bolsos originales a $60.000. Combinan con todo y son ideales para regalar. Envío gratis en Avellaneda y La Boca.
+              Carteras y bolsos a $60.000. Combinan con todo y son ideales para regalar. Envío gratis en Avellaneda y La Boca.
             </p>
           </div>
           <div className="row g-3 justify-content-center">
