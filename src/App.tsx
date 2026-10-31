@@ -126,6 +126,18 @@ import wantedEdt from "@assets/Captura de pantalla 2026-10-15 163905.png";
 import turathiBlue from "@assets/Captura de pantalla 2026-10-15 163913.png";
 import irida from "@assets/Captura de pantalla 2026-10-15 163929.png";
 
+import car01 from "@assets/Captura de pantalla 2026-10-31 151834.png";
+import car02 from "@assets/Captura de pantalla 2026-10-31 151843.png";
+import car03 from "@assets/Captura de pantalla 2026-10-31 151853.png";
+import car04 from "@assets/Captura de pantalla 2026-10-31 151903.png";
+import car05 from "@assets/Captura de pantalla 2026-10-31 151911.png";
+import car06 from "@assets/Captura de pantalla 2026-10-31 151921.png";
+import car07 from "@assets/Captura de pantalla 2026-10-31 151929.png";
+import car08 from "@assets/Captura de pantalla 2026-10-31 151939.png";
+import car09 from "@assets/Captura de pantalla 2026-10-31 151947.png";
+import car10 from "@assets/Captura de pantalla 2026-10-31 151958.png";
+import car11 from "@assets/Captura de pantalla 2026-10-31 152007.png";
+
 const waLink = (name: string) =>
   "https://wa.me/5491131430876?text=" + encodeURIComponent("Hola! Me interesa el perfume: " + name);
 
@@ -242,18 +254,18 @@ const aaa = [
   { img: badBoyExtreme, name: "Bad Boy Extreme", marca: "Carolina Herrera", genero: "Hombre", aroma: "Cuero, especiado, amaderado", precio: 40000 },
 ];
 
-const diaDeLaMadre = [
-  arabes.find((p) => p.name === "Yara Rosa")!,
-  arabes.find((p) => p.name === "Yara Amarillo")!,
-  arabes.find((p) => p.name === "Erba Pura Soprano")!,
-  arabes.find((p) => p.name === "Marshmallow Blush")!,
-  arabes.find((p) => p.name === "Choco Overdose")!,
-  arabes.find((p) => p.name === "Her Confession")!,
-  arabes.find((p) => p.name === "Gisela 200ML")!,
-  arabes.find((p) => p.name === "Alexandria II")!,
-  arabes.find((p) => p.name === "Aether Extrait")!,
-  arabes.find((p) => p.name === "Barakkat Rouge")!,
-  arabes.find((p) => p.name === "Vintage")!,
+const carteras = [
+  { img: car01, name: "Cartera Bandolera", marca: "Importada", precio: 60000 },
+  { img: car02, name: "Cartera Zara", marca: "Zara", precio: 60000 },
+  { img: car03, name: "Cartera Tote", marca: "Importada", precio: 60000 },
+  { img: car04, name: "Cartera Shopper", marca: "Importada", precio: 60000 },
+  { img: car05, name: "Cartera de Cuero", marca: "Importada", precio: 60000 },
+  { img: car06, name: "Cartera Hobo", marca: "Importada", precio: 60000 },
+  { img: car07, name: "Cartera Clásica", marca: "Importada", precio: 60000 },
+  { img: car08, name: "Cartera Elegante", marca: "Importada", precio: 60000 },
+  { img: car09, name: "Cartera Casual", marca: "Importada", precio: 60000 },
+  { img: car10, name: "Cartera Minimalista", marca: "Importada", precio: 60000 },
+  { img: car11, name: "Cartera Zara Tote", marca: "Zara", precio: 60000 },
 ];
 
 const destacados = [arabes[0], arabes[1], arabes[2], arabes[3], arabes[4], arabes[5]];
@@ -290,9 +302,38 @@ function PerfumeCard({ img, name, marca, genero, aroma, precio }: { img: string;
   );
 }
 
+function CarteraCard({ img, name, marca, precio }: { img: string; name: string; marca: string; precio?: number }) {
+  return (
+    <div className="col-6 col-md-4 col-lg-3 mb-4">
+      <a href={waLink(name)} target="_blank" rel="noopener noreferrer" className="perfume-card-link">
+        <div className="perfume-card">
+          <div className="perfume-img-wrap">
+            <img src={img} alt={name + " " + marca + " cartera original"} className="perfume-img" loading="lazy" />
+            <div className="aroma-overlay">
+              <div className="aroma-overlay-inner">
+                <p className="aroma-label">Cartera Original</p>
+                <p className="aroma-text">Cuero premium</p>
+                <span className="aroma-cta"><i className="bi bi-whatsapp"></i> Consultar</span>
+              </div>
+            </div>
+          </div>
+          <div className="perfume-info">
+            <div className="perfume-meta">
+              <p className="perfume-marca">{marca}</p>
+              <span className="genero-badge badge-mujer">Mujer</span>
+            </div>
+            <p className="perfume-name">{name}</p>
+            {precio && <div className="precio-badge">{formatPrecio(precio)}</div>}
+          </div>
+        </div>
+      </a>
+    </div>
+  );
+}
+
 const navItems = [
-  { label: "Día de la Madre", href: "#dia-de-la-madre" },
   { label: "Más Buscados", href: "#destacados" },
+  { label: "Carteras", href: "#carteras" },
   { label: "Árabes", href: "#arabes" },
   { label: "AAA", href: "#aaa" },
 ];
@@ -657,8 +698,8 @@ export default function App() {
           background-image: linear-gradient(160deg, #241a08 0%, #0a0a0a 60%);
           filter: none;
         }
-        .hero-bg-madre {
-          background-image: linear-gradient(160deg, #3d1022 0%, #6b1d3a 45%, #0a0a0a 100%);
+        .hero-bg-carteras {
+          background-image: linear-gradient(160deg, #20140c 0%, #4a3320 50%, #0a0a0a 100%);
           filter: none;
         }
         .hero-overlay {
@@ -942,6 +983,39 @@ export default function App() {
         .destacado-wa:hover {
           background: #1ebe5a;
         }
+        .destacado-img-wrap {
+          position: relative;
+        }
+        .destacado-oferta {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+          z-index: 2;
+          background: #e53935;
+          color: #fff;
+          font-size: 0.6rem;
+          font-weight: 700;
+          letter-spacing: 0.12em;
+          padding: 0.25rem 0.65rem;
+          text-transform: uppercase;
+        }
+        .destacado-precio {
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          gap: 0.5rem;
+          margin-bottom: 0.6rem;
+        }
+        .precio-tachado {
+          color: var(--text-muted);
+          text-decoration: line-through;
+          font-size: 0.7rem;
+        }
+        .precio-oferta {
+          color: #e53935;
+          font-weight: 700;
+          font-size: 0.9rem;
+        }
 
         @media (max-width: 600px) {
           .destacados-grid {
@@ -1209,26 +1283,26 @@ export default function App() {
               </div>
             </div>
 
-            {/* Slide 2: Día de la Madre */}
+            {/* Slide 2: Carteras */}
             <div className="carousel-slide">
-              <div className="hero-bg hero-bg-madre"></div>
+              <div className="hero-bg hero-bg-carteras"></div>
               <div className="hero-overlay"></div>
               <div className="hero-content">
-                <div className="hero-badge">Día de la Madre</div>
+                <div className="hero-badge">Nuevo Ingreso</div>
                 <h1 className="hero-title">
-                  Regalos para Mamá<br /><span>que enamoran</span>
+                  Carteras<br /><span>para complementar tu look</span>
                 </h1>
-                <p className="hero-subtitle">Domingo 18 de octubre · Perfumes para ella</p>
+                <p className="hero-subtitle">Carteras originales · $60.000</p>
                 <div className="hero-collage">
-                  {diaDeLaMadre.slice(0, 6).map((p, i) => (
+                  {carteras.slice(0, 6).map((p, i) => (
                     <a key={i} href={waLink(p.name)} target="_blank" rel="noopener noreferrer">
                       <img src={p.img} alt={p.name} loading="eager" />
                     </a>
                   ))}
                 </div>
-                <a href="#dia-de-la-madre" className="hero-cta nav-scroll-link">
-                  <i className="bi bi-heart"></i>
-                  Ver Regalos
+                <a href="#carteras" className="hero-cta nav-scroll-link">
+                  <i className="bi bi-bag"></i>
+                  Ver Carteras
                 </a>
               </div>
             </div>
@@ -1265,25 +1339,6 @@ export default function App() {
         </div>
       </header>
 
-      {/* DÍA DE LA MADRE */}
-      <section id="dia-de-la-madre" className="perfume-section novedades-section">
-        <div className="container">
-          <div className="section-header">
-            <div className="section-divider"></div>
-            <p className="section-tag">Día de la Madre</p>
-            <h2 className="section-title">Regalos para Mamá</h2>
-            <p className="section-desc">
-              Este domingo 18 de octubre celebramos a mamá. Perfumes dulces, florales y elegantes pensados para ella, con envío gratis.
-            </p>
-          </div>
-          <div className="row g-3 justify-content-center">
-            {diaDeLaMadre.map((p, i) => (
-              <PerfumeCard key={i} img={p.img} name={p.name} marca={p.marca} genero={p.genero} aroma={p.aroma} precio={p.precio} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* DESTACADOS */}
       <section id="destacados" className="perfume-section">
         <div className="section-header">
@@ -1298,15 +1353,39 @@ export default function App() {
           {destacados.map((p, i) => (
             <a key={i} href={waLink(p.name)} target="_blank" rel="noopener noreferrer" className="destacado-card">
               <div className="destacado-img-wrap">
+                <span className="destacado-oferta">Oferta</span>
                 <img src={p.img} alt={p.name} loading="lazy" />
               </div>
               <div className="destacado-info">
                 <p className="destacado-marca">{p.marca}</p>
                 <p className="destacado-name">{p.name}</p>
+                <div className="destacado-precio">
+                  <span className="precio-tachado">{formatPrecio(p.precio! + 15000)}</span>
+                  <span className="precio-oferta">{formatPrecio(p.precio!)}</span>
+                </div>
                 <span className="destacado-wa"><i className="bi bi-whatsapp"></i> Consultar</span>
               </div>
             </a>
           ))}
+        </div>
+      </section>
+
+      {/* CARTERAS */}
+      <section id="carteras" className="perfume-section" aria-label="Carteras Originales">
+        <div className="container">
+          <div className="section-header">
+            <div className="section-divider"></div>
+            <p className="section-tag">Nuevo Ingreso</p>
+            <h2 className="section-title">Carteras Originales</h2>
+            <p className="section-desc">
+              Carteras y bolsos originales a $60.000. Combinan con todo y son ideales para regalar. Envío gratis en Avellaneda y La Boca.
+            </p>
+          </div>
+          <div className="row g-3 justify-content-center">
+            {carteras.map((p, i) => (
+              <CarteraCard key={i} img={p.img} name={p.name} marca={p.marca} precio={p.precio} />
+            ))}
+          </div>
         </div>
       </section>
 
